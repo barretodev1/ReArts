@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  padding: 0%;
+}
+
+.meu-header {
+  background-color: rgb(156, 120, 49);
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  padding: 20px;
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+
+  .opcoes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+  }
+  
+    p {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    p:hover {
+      transform: scale(1.1) translateZ(0);
+    }
+
+  
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  background-image:     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Camada de gradiente escuro */
+  url("./src/assets/pexels-ivan-samkov-4491846.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.meu-texto {
+  margin-top: 60px;
+  margin-left: 47px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 11px;
+  word-spacing: 2px;
+}
+
+.botao-orcamento {
+  margin-top: 25px;
+  width: 16rem;
+  height: 3rem;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(30, 145, 30);
+  cursor: pointer;
+  transition: 0.3s;
+
+  a  {
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+  }
+}
+
+.botao-orcamento:hover {
+  transition: 0.3s;
+  background-color: green;
+}
+
+
+
+
