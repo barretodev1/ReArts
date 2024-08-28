@@ -11,7 +11,9 @@ body {
 }
 
 .meu-header {
+  z-index: 2;
   background-color: rgb(156, 120, 49);
+  border-bottom: 1px solid black;
   width: 100%;
   height: 14vh;
   display: flex;
@@ -34,12 +36,19 @@ body {
     position: fixed;
     right: 0;
     margin-right: 40px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
   }
   
     p {
       color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
       display: flex;
       align-items: center;
       margin: 15px;
@@ -54,6 +63,10 @@ body {
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .principal {
   display: flex;
   align-items: center;
@@ -65,17 +78,32 @@ body {
   height: 100vh;
 }
 
+.meu-p {
+  color: rgb(156, 120, 49);
+  display: flex;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 0.6rem;
+  margin-left: 2px;
+}
+
 .meu-texto {
   margin-top: 60px;
   margin-left: 47px;
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  font-style: normal;
   font-size: 11px;
   word-spacing: 2px;
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  }
 }
 
 .botao-orcamento {
@@ -85,7 +113,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 50px;
-  background-color: rgb(30, 145, 30);
+  background-color: rgb(156, 120, 49);
   cursor: pointer;
   transition: 0.3s;
 
@@ -98,9 +126,177 @@ body {
 
 .botao-orcamento:hover {
   transition: 0.3s;
-  background-color: green;
+  background-color: rgb(123, 90, 22);
 }
 
+.main-sobre {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.sobre-nos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  h1 {
+    margin-top: 38px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+}
+
+.img-sobre {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 17%;
+    height: 36rem;
+    border-radius: 20px;
+  }
+}
+
+.secao-texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.meus-p-h2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;  
+  margin-bottom: 2rem;
+  margin-right: 6rem;
+
+  p {
+    flex-direction: column;
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    display: flex;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+}
+
+.beneficio {
+  padding: 40px;
+  background-color: rgb(156, 120, 49);
+
+  .beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      font-size:50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+    }
+  }
+
+}
+
+.card-geral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+} 
+
+.cards-1 {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  .card {
+    background-color: white;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 15px;
+  }
+
+}
+
+.cards-2 {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+
+  .card {
+    background-color: white;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 15px
+  }
+
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  
+
+  p {
+    color: black;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    margin-top: 2rem;
+  }
+
+}
+
+.meus-tit {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 13px;
+  }
+
+}
