@@ -5,7 +5,7 @@ function App() {
   <>
 
 
-    {/* MEU HEADER */}
+    {/* MEU HEADEER */}
     <section>
       <header className='meu-header'>
 
