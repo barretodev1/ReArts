@@ -38,13 +38,22 @@ body {
     margin-right: 40px;
 
     a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-style: normal;
       text-decoration: none;
       color: inherit;
       cursor: pointer;
     }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
   }
   
-    p {
+    li {
       color: white;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -56,11 +65,9 @@ body {
       transition: 0.2s;
     }
 
-    p:hover {
+    li:hover {
       transform: scale(1.1) translateZ(0);
     }
-
-  
 }
 
 html {
@@ -68,10 +75,11 @@ html {
 }
 
 .principal {
+  width: 100%;
   display: flex;
   align-items: center;
   background-image:     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Camada de gradiente escuro */
-  url("./src/assets/pexels-ivan-samkov-4491846.png");
+  url("src/assets/pexels-ivan-samkov-4491846.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,10 +107,11 @@ html {
   word-spacing: 2px;
 
   h1 {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
+  font-size: 17px;
   }
 }
 
@@ -118,6 +127,8 @@ html {
   transition: 0.3s;
 
   a  {
+    outline: none;
+    text-decoration: none;
     font-size: 16px;
     padding: 10px;
     color: white;
@@ -127,6 +138,11 @@ html {
 .botao-orcamento:hover {
   transition: 0.3s;
   background-color: rgb(123, 90, 22);
+}
+
+.page-sobre {
+  width: 100%;
+  background-color: #dbd4d4;
 }
 
 .main-sobre {
@@ -147,7 +163,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -163,7 +179,7 @@ html {
     display: flex;
     margin-top: 5px;
     margin-left: 17%;
-    height: 36rem;
+    height: 32rem;
     border-radius: 20px;
   }
 }
@@ -179,15 +195,15 @@ html {
   flex-direction: column;
   margin: 10px;  
   margin-bottom: 2rem;
-  margin-right: 6rem;
+  margin-right: 3rem;
 
   p {
     flex-direction: column;
     font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   h2 {
@@ -195,14 +211,14 @@ html {
     font-optical-sizing: auto;
     font-weight: 400;
     display: flex;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 1rem;
   }
 
 }
 
 .beneficio {
-  padding: 40px;
+  padding: 60px;
   background-color: rgb(156, 120, 49);
 
   .beneficios {
@@ -211,12 +227,12 @@ html {
     justify-content: center;
   
     h1 {
-      font-size:50px;
+      font-size:45px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: "Archivo Black", sans-serif;
-      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
       font-style: normal;
       display: flex;
     }
@@ -224,79 +240,62 @@ html {
 
 }
 
-.card-geral {
+.card-bloco-geral {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 40px;
+  margin-top: 4rem;
+}
+
+.card-fileira-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
 } 
 
-.cards-1 {
-  display: flex;
-  gap: 10rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-
-  .card {
-    background-color: white;
-    width: 20vw;
-    height: 50vh;
-    border-radius: 15px;
-  }
-
-}
-
-.cards-2 {
-  display: flex;
-  gap: 10rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 3rem;
-
-  .card {
-    background-color: white;
-    width: 20vw;
-    height: 50vh;
-    border-radius: 15px
-  }
-
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  align-items: flex-start;
-  justify-content: center;
-  
-
-  p {
-    color: black;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    display: flex;
-    margin-top: 2rem;
-  }
-
-}
-
-.meus-tit {
-  text-align: center;
+.bloco {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  height: 50vh;
+  width: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    align-items: center;
-    margin-top: 5rem;
-    font-size: 13px;
+  h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 2rem; 
+    color: rgb(156, 120, 49);
   }
 
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px; 
+    color: rgb(156, 120, 49);
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45%;
+  }
 }
+
+.card-fileira-2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+} 
+
