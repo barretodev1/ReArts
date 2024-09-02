@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+    padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+} 
+
+.meu-header-produtos {
+    position: fixed;
+    z-index: 4;
+    background-color: rgb(156, 120, 49);
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .opcoes-produtos {
+      display: flex;
+      flex-direction: row;
+      margin-right: 40px;
+  
+      a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+  
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
+  
+    }
+    
+      li {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        margin: 15px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+  
+      li:hover {
+        transform: scale(1.1) translateZ(0);
+      }
+}
+
+.produtos-2 {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dbd4d4;
+}
+
+.button-veja-mais {
+  display: flex;
+  margin-top: 5rem;
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  
+  button {
+    text-decoration: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    background-color: rgb(156, 120, 49);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 19vw;
+    height: 6vh;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+
+  button:hover {
+    transition: 0.5s;
+    background-color: rgb(182, 143, 64);
+
+  }
+}
+
+.nossos-produtos-text {
+  margin-top: 5rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 27px; 
+  color: rgb(156, 120, 49);
+}
+
+.card-produto2{
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 7rem;
+  width: 100%; /* Garante que a largura do contêiner ocupe 100% */
+}
+
+.produto-card2 {
+  border-radius: 14px;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 75vh; 
+  padding: 30px; 
+  flex-basis: 15%; /* Garante que cada card ocupe cerca de 45% do espaço disponível */
+}
+
+.filtros {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 40vh;
+  padding: 15px;
+  background-color: rgb(156, 120, 49); /* Opcional: cor de fundo para melhor visualização */
+  border-radius: 8px; /* Opcional: borda arredondada */
+}
+
+ .config label {
+  display: flex;
+  align-items: center;
+}
+
+.config h2 {
+  color: #dbd4d4;
+  margin-bottom: 1rem;
+}
+
+.config label {
+  color: #dbd4d4; 
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.config input[type="checkbox"] {
+  margin-right: 0.5rem; 
+} 
+
+

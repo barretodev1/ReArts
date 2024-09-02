@@ -1,13 +1,20 @@
-import { Link } from "react-router-dom"
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// importações
+import { Link, useNavigate } from "react-router-dom"
+import { useEffect } from "react";
+import 'aos/dist/aos.css';
+import AOS from 'aos'
 import "./App.css";
 
 function App() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  function GoingProdutos() {
+    navigate('/produtos')
+  }
 
   return (
     <>
@@ -168,7 +175,7 @@ function App() {
                 <img src="src/assets/icons8-régua-100.png" alt="" />
               </div>
               <div className='orçamento'>
-                <a href='#orçamento'>Realizar um orçamento</a>
+                <a href='#varejo'>Realizar um orçamento</a>
               </div>
               {/*IMAGEM*/}
             </div>
@@ -233,7 +240,7 @@ function App() {
             <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
 
           {/* ESPAÇOS ENTRE OS CARDS */}
@@ -243,7 +250,7 @@ function App() {
           <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
         </article>
 
@@ -253,7 +260,7 @@ function App() {
             <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
 
           {/* ESPAÇOS ENTRE OS CARDS */}
@@ -263,7 +270,7 @@ function App() {
           <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
         </article>
 
@@ -273,7 +280,7 @@ function App() {
             <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
 
           {/* ESPAÇOS ENTRE OS CARDS */}
@@ -283,15 +290,93 @@ function App() {
           <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button>COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
           </div>
         </article>
 
         <div>
-          <Link className="ver-mais" to="/produtos" ><button>VER MAIS PRODUTOS</button></Link>
+          <button className="ver-mais" onClick={GoingProdutos}>VER MAIS PRODUTOS</button>
         </div>
 
       </section>
+
+      <section className="varejo" id="varejo">
+        <div className="textos-orçamento">
+          <h1>QUER SERVIÇO DE VAREJO OU <br></br>PERSONALIZAÇÃO?</h1>
+          <h2>SOLICITE O ORÇAMENTO ABAIXO</h2>
+        </div>
+
+        <div className="form">
+
+        <div className="input-menor"> {/*INPUT MENOR */}
+            <input placeholder="Seu nome" type="name" />
+            <input placeholder="Seu e-mail" type="email" />
+        </div>
+
+        <div className="input-menor"> {/*INPUT MENOR */}
+            <input placeholder="Seu telefone" type="tel" />
+
+            <select id="servicos" name="servicos">
+              <option value="" disabled selected>Serviço</option>
+              <option value="banho">Móveis</option>
+              <option value="tosa">Varejo</option>
+              <option value="banhoTosa">Personalização</option>
+            </select>
+        </div>
+
+        <div className="input-menor">
+          <input className="mensagem" placeholder="Mensagem" type="text" />
+        </div>
+
+        <div className="botao-varejoo">
+          <button className="botao-varejo">SOLICITAR ORÇAMENTO</button>
+        </div>
+
+        </div>
+
+      </section>
+
+      <section className="rodapé">
+        <footer className="footer">
+          <div className="contato-footer">
+            <h1>Contato</h1>
+            <a href="https://wa.me/5511933255476?text=Ol%C3%A1%2C%20Tudo%20bem%3F%20">(11) 94239-7383-</a>
+            <a href="mailto:renatod.santos@telefonica.com?subject=Marcenaria%20Criativa%20&body=Ol%C3%A1!%20Tudo%20bem%3F%20(Escreva%20a%20sua%20mensagem%20abaixo)">contato@email.com</a>
+            <a href="">CEP: 08081-170</a>
+          </div>
+          
+          {/* DIV   */}
+
+          <div className="social-footer">
+            <h1>Redes Sociais</h1>
+            <a href=""><img src="./src/assets/icons8-instagram-20 (1).png" alt="" />Instagram </a>
+            <a href=""><img src="./src/assets/icons8-tiktok-20 (3).png" alt="" />TikTok </a>
+            <a href=""><img src="./src/assets/icons8-whatsapp-20 (1).png" alt="" />WhatsApp </a>
+            <a href=""><img src="./src/assets/icons8-facebook-20.png" alt="" />Facebook </a>
+          </div>
+
+          {/* DIV   */}
+
+          <div className="envio-footer">
+            <h1>Formas de Envio</h1>
+            <p href="">Sedex</p>
+            <p href="">PAC</p>
+            <p href="">Loggi</p>
+            <p href="">Kangu</p>
+          </div>
+
+          {/* DIV   */}
+
+          <div className="pagamento-footer">
+            <h1>Meios de Pagamento</h1>
+            <p href="">PIX</p>
+            <p href="">Crédito</p>
+            <p href="">Débito</p>
+            <p href="">Boleto Bancário</p>
+          </div>
+        </footer>
+      </section>
+
     </>
   );
 }

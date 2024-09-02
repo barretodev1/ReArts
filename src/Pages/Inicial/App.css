@@ -178,9 +178,9 @@ html {
 
   img {
     display: flex;
-    margin-top: 5px;
-    margin-left: 17%;
-    height: 32rem;
+    margin-top: px;
+    margin-left: 13%;
+    height: 36rem;
     border-radius: 20px;
   }
 }
@@ -303,7 +303,7 @@ html {
 
 .orçamento {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   a {
     text-decoration: underline;
@@ -344,13 +344,16 @@ html {
   width: 30vw;
   height: 75vh; 
   padding: 30px; 
+  flex-basis: 15%; /* Garante que cada card ocupe cerca de 45% do espaço disponível */
 }
 
 .card-produto {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os cards */
   gap: 6rem;
-} 
+  width: 100%; /* Garante que a largura do contêiner ocupe 100% */
+}
 
 .imagem-produto {
   display: flex;
@@ -418,14 +421,22 @@ html {
 }
 
 .botao-card {
+  text-decoration: none;
+  outline: none;
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
   
   button {
+    text-decoration: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     cursor: pointer;
     background-color: rgb(156, 120, 49);
-    color: black;
+    color: rgb(0, 0, 0);
     border: none;
     width: 19vw;
     height: 6vh;
@@ -442,11 +453,14 @@ html {
 }
 
 .ver-mais {
-  display: flex;
-  align-items: center;
-  margin-top: 5rem;
-  
-  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     cursor: pointer;
     background-color: rgb(156, 120, 49);
     color: black;
@@ -455,7 +469,6 @@ html {
     height: 6vh;
     border-radius: 20px;
     transition: 0.5s;
-  }
 
   button:hover {
     transition: 0.5s;
@@ -463,4 +476,230 @@ html {
 
   }
 
+}
+
+.varejo {
+  background-color: rgb(156, 120, 49);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textos-orçamento {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: 33px;
+    color: #dbd4d4;
+    display: flex;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 54vh;
+}
+
+.input-menor {
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  input {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+  }
+
+  select {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .mensagem {
+    display: flex;
+    width: 50vw;
+    height: 10vh;
+  }
+
+}
+.input-menor input,
+.input-menor select {
+  width: 49%; 
+  padding: 10px; /* Ajusta o padding para que fiquem com uma altura similar */
+  box-sizing: border-box; 
+}
+
+.botao-varejoo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+
+    .botao-varejo {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      width: 49vw;
+      height: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #dbd4d4;
+      transition: 0.4s;
+    }
+
+    .botao-varejo:hover {
+      transition: 0.4s;
+      background-color: #857d7d;
+    }
+}
+
+.rodapé {
+  background-color: #dbd4d4;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contato-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    color: rgb(156, 120, 49);
+    font-size: 14px;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    gap: 0.4rem;
+  }
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    color: rgb(156, 120, 49);
+    font-size: 14px;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    gap: 0.4rem;
+  }
+}
+
+.envio-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    color: rgb(156, 120, 49);
+    font-size: 14px;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    margin: -0rem;
+  }
+}
+
+.pagamento-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    color: rgb(156, 120, 49);
+    font-size: 14px;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: flex;
+    margin: -0rem;
+  }
 }
