@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import '../Produtos/App.css';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import { Link } from "react-router-dom";
 
 function Produtos() {
@@ -36,24 +35,36 @@ function Produtos() {
 
   return (
     <>
+      {/* MEU SECTION HEADER */}
       <section className="menu">
         <header className="meu-header">
           <div>
+            <a href="http://localhost:5173/">
             <img src="src/assets/MARCENARIA-removebg-preview.png" alt="" />
+            </a>
           </div>
 
           <div className="opcoes">
             <ul>
-              <Link to="/"><li><a href="#home">Home</a></li></Link>
-              <Link to="/"><li><a href="#sobre">Sobre</a></li></Link>
-              <Link to="/"><li><a href="#beneficios">Benefícios</a></li></Link>
-              <Link to="/"><li><a href="#produtos">Marcenaria</a></li></Link>
-              <Link to="/"><li><a href="#varejo">Varejo</a></li></Link>
+              <li>
+                <Link href="#home">Home</Link>
+              </li>
+              <li>
+                <Link href="#sobre">Sobre</Link>
+              </li>
+              <li>
+                <Link href="#beneficios">Benefícios</Link>
+              </li>
+              <li>
+                <Link href="#produtos">Marcenaria</Link>
+              </li>
+              <li>
+                <Link href="#varejo">Varejo</Link>
+              </li>
             </ul>
           </div>
         </header>
       </section>
-
 
       <section className='produtos-2'>
         <div className='nossos-produtos-text'>

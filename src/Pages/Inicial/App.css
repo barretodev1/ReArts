@@ -11,7 +11,7 @@ body {
 }
 
 .meu-header {
-  z-index: 2;
+  z-index: 5;
   background-color: rgb(156, 120, 49);
   border-bottom: 1px solid black;
   width: 100%;
@@ -37,7 +37,7 @@ body {
     right: 0;
     margin-right: 40px;
 
-    a {
+      a {
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
       font-style: normal;
@@ -116,7 +116,7 @@ html {
 }
 
 .botao-orcamento {
-  margin-top: 25px;
+  margin-top: 1rem;
   width: 16rem;
   height: 3rem;
   padding: 10px;

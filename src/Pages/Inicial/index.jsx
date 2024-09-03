@@ -1,12 +1,13 @@
 // importações
 import { Link, useNavigate } from "react-router-dom"
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import "./App.css";
 
 function App() {
   const navigate = useNavigate();
+  const [servico, setServico] = useState("");
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -16,13 +17,19 @@ function App() {
     navigate('/produtos')
   }
 
+  function GoingInfoProdutoTábua() {
+    navigate('/produtos/tábuas')
+  }
+
   return (
     <>
       {/* MEU HEADER */}
       <section className="menu">
         <header className="meu-header">
           <div>
+            <a href="">
             <img src="src/assets/MARCENARIA-removebg-preview.png" alt="" />
+            </a>
           </div>
 
           <div className="opcoes">
@@ -64,7 +71,7 @@ function App() {
               <br /> os clientes tragam um toque exclusivo.
             </h1>
             <button className="botao-orcamento">
-              <a href="https://api.whatsapp.com/send?phone=5511942387383">
+              <a href="api.whatsapp.com/send?phone=5511942387383">
                 Faça seu orçamento
               </a>
             </button>
@@ -235,19 +242,19 @@ function App() {
 
         {/* DAQUI PRA BAIXO - NOSSOS PRODUTOS/MARCENARIA */}
         <article className='card-produto'>
-          <div className='produto-card'> {/*CARD COMPLETO */}
-            <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */}
-            <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+          <div className='produto-card' id="tábua de churrasco"> {/*CARD COMPLETO */}
+            <Link to="/produtos/tábuas" onClick={GoingInfoProdutoTábua}><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */}
+            <div className='h1-card'><h1>Tábuas de Churrasco</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
-            <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
+            <Link className='botao-card' to="/produtos/tábuas"><button onClick={GoingInfoProdutoTábua} type="button">COMPRAR</button></Link>
           </div>
 
           {/* ESPAÇOS ENTRE OS CARDS */}
 
-          <div className='produto-card'> {/*CARD COMPLETO */}
+          <div className='produto-card' id="tábua de churrasco gourmet"> {/*CARD COMPLETO */}
           <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */} {/*AJUSTAR A ROTA DO LINK*/}
-          <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+          <div className='h1-card'><h1>Tábua de Churrasco Gourmet</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
             <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
@@ -255,9 +262,9 @@ function App() {
         </article>
 
         <article className='card-produto'>
-          <div className='produto-card'> {/*CARD COMPLETO */}
+          <div className='produto-card' id="mesa escrivaninha"> {/*CARD COMPLETO */}
             <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */}
-            <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+            <div className='h1-card'><h1>Escrivaninha de Trabalho</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
             <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
@@ -265,9 +272,9 @@ function App() {
 
           {/* ESPAÇOS ENTRE OS CARDS */}
 
-          <div className='produto-card'> {/*CARD COMPLETO */}
+          <div className='produto-card' id="suporte-celular"> {/*CARD COMPLETO */}
           <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */} {/*AJUSTAR A ROTA DO LINK*/}
-          <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+          <div className='h1-card'><h1>Suporte para Celular</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
             <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
@@ -275,9 +282,9 @@ function App() {
         </article>
 
         <article className='card-produto'>
-          <div className='produto-card'> {/*CARD COMPLETO */}
+          <div className='produto-card' id="Gaiola"> {/*CARD COMPLETO */}
             <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */}
-            <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+            <div className='h1-card'><h1>Gaiola de Pássaros</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
             <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
@@ -285,9 +292,9 @@ function App() {
 
           {/* ESPAÇOS ENTRE OS CARDS */}
 
-          <div className='produto-card'> {/*CARD COMPLETO */}
+          <div className='produto-card' id="mesa-jantar"> {/*CARD COMPLETO */}
           <Link to="/produtos"><div className='imagem-produto'></div></Link> {/*CARD IMAGEM */} {/*AJUSTAR A ROTA DO LINK*/}
-          <div className='h1-card'><h1>Lorem ipsum dolor sit amet, consectetur</h1></div>
+          <div className='h1-card'><h1>Mesa de Jantar</h1></div>
             <div className='h2-card'><h2>R$3.000,00 no pix</h2></div>
             <div className='h3-card'><h3>ou 12X R$245,99</h3></div>
             <Link className='botao-card' to="/produtos"><button type="button">COMPRAR</button></Link>
@@ -300,6 +307,7 @@ function App() {
 
       </section>
 
+      {/* PAGE ORÇAMENTO DE VAREJO */}
       <section className="varejo" id="varejo">
         <div className="textos-orçamento">
           <h1>QUER SERVIÇO DE VAREJO OU <br></br>PERSONALIZAÇÃO?</h1>
@@ -316,8 +324,8 @@ function App() {
         <div className="input-menor"> {/*INPUT MENOR */}
             <input placeholder="Seu telefone" type="tel" />
 
-            <select id="servicos" name="servicos">
-              <option value="" disabled selected>Serviço</option>
+            <select id="servicos" name="servicos" value={servico} onChange={(e) => setServico(e.target.value)}>
+              <option value="" disabled>Serviço</option>
               <option value="banho">Móveis</option>
               <option value="tosa">Varejo</option>
               <option value="banhoTosa">Personalização</option>
@@ -336,23 +344,24 @@ function App() {
 
       </section>
 
+      {/* PAGE DE RODAPÉ */}
       <section className="rodapé">
         <footer className="footer">
           <div className="contato-footer">
             <h1>Contato</h1>
-            <a href="https://wa.me/5511933255476?text=Ol%C3%A1%2C%20Tudo%20bem%3F%20">(11) 94239-7383-</a>
-            <a href="mailto:renatod.santos@telefonica.com?subject=Marcenaria%20Criativa%20&body=Ol%C3%A1!%20Tudo%20bem%3F%20(Escreva%20a%20sua%20mensagem%20abaixo)">contato@email.com</a>
-            <a href="">CEP: 08081-170</a>
+            <Link href="https://wa.me/5511933255476?text=Ol%C3%A1%2C%20Tudo%20bem%3F%20">(11) 94239-7383-</Link>
+            <Link href="mailto:renatod.santos@telefonica.com?subject=Marcenaria%20Criativa%20&body=Ol%C3%A1!%20Tudo%20bem%3F%20(Escreva%20a%20sua%20mensagem%20abaixo)">contato@email.com</Link>
+            <Link href="">CEP: 08081-170</Link>
           </div>
           
           {/* DIV   */}
 
           <div className="social-footer">
             <h1>Redes Sociais</h1>
-            <a href=""><img src="./src/assets/icons8-instagram-20 (1).png" alt="" />Instagram </a>
-            <a href=""><img src="./src/assets/icons8-tiktok-20 (3).png" alt="" />TikTok </a>
-            <a href=""><img src="./src/assets/icons8-whatsapp-20 (1).png" alt="" />WhatsApp </a>
-            <a href=""><img src="./src/assets/icons8-facebook-20.png" alt="" />Facebook </a>
+            <Link href=""><img src="./src/assets/icons8-instagram-20 (1).png" alt="" />Instagram </Link>
+            <Link href=""><img src="./src/assets/icons8-tiktok-20 (3).png" alt="" />TikTok </Link>
+            <Link href=""><img src="./src/assets/icons8-whatsapp-20 (1).png" alt="" />WhatsApp </Link>
+            <Link href=""><img src="./src/assets/icons8-facebook-20.png" alt="" />Facebook </Link>
           </div>
 
           {/* DIV   */}

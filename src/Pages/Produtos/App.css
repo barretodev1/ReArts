@@ -24,8 +24,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0%;
+    padding: 20px;
   
-    .opcoes-produtos {
+    .opcoes {
       display: flex;
       flex-direction: row;
       margin-right: 40px;
@@ -135,6 +137,9 @@ html {
 }
 
 .filtros {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -158,12 +163,14 @@ html {
 }
 
 .config label {
+  border-radius: 30%;
   color: #dbd4d4; 
   display: flex;
   margin-bottom: 0.5rem;
 }
 
 .config input[type="checkbox"] {
+  border-radius: 30%;
   margin-right: 0.5rem; 
 } 
 

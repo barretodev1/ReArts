@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+  }
+  
+body {
+    background-color: #dbd4d4;
+    padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.meu-header {
+  z-index: 3;
+  background-color: rgb(156, 120, 49);
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  top: 0%;
+  padding: 20px;
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+
+  .opcoes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+
+      a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+  
+    li {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    li:hover {
+      transform: scale(1.1) translateZ(0);
+    }
+}
+
+.infos {
+  display: flex;
+  justify-content: center;
+  font-size: 9px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding: 10px;
+  background-color: black;
+  padding-top: 16vh; /* Ajuste esse valor conforme necessário */
+}
+
+.tela-vendas {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-venda {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  
+  .imagens-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 76vh;
+    width: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img1 {
+      background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+    .img2 {
+      background-image: url("../src/assets/pexels-ivan-samkov-4491846.png");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+    .img3 {
+      background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+  }
+
+  .imagem-principal {
+    background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+    background-size: cover;
+    height: 76vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-gerais {
+    position: relative;
+    height: 76vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .nome-preço {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 33px;
+      font-family: "Archivo Black", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+    }
+  }
+
+  .preço-cartao {
+    margin-top: 0.5rem;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meu-h1-card h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 7px;
+    width: 18vw;
+    border: 1px solid;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .meu-h1-card h1 span {
+    margin-left: 0.2rem;
+  }
+
+  .bandeiras-cartao {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+
+
+    .nossa-band {
+      background-image: url('../../../img/amex.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band1 {
+      background-image: url('../../../img/visa.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band2 {
+      background-image: url('../../../img/hipercard.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band3 {
+      background-image: url('../../../img/mastercard.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+  }
+
+  .meu-p-desconto  {
+    display: flex;
+    font-size: 13px;
+    margin-top: 0.6rem;
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+    }
+
+    p span {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+    }
+  }
+
+  .meios-pag {
+    margin-top: 0.5rem;
+    display: flex;
+
+    p {
+      cursor: pointer;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+    }
+  }
+
+  .separa {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 1.5rem;
+    width: 63vh;
+  }
+
+  .quantidade input,
+  .quantidade {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  
+    input {
+      display: flex;
+      padding: 30px 30px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+    }
+  
+    select {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+
+  .quantidade select {
+    width: 40vw; 
+    padding: 10px; /* Ajusta o padding para que fiquem com uma altura similar */
+    box-sizing: border-box;
+  }
+}
+
