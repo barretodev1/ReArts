@@ -141,6 +141,8 @@ html {
 }
 
 .page-sobre {
+  padding-top: 0;
+  margin-top: 0;
   padding: 40px;
   width: 100%;
   background-color: #dbd4d4;
@@ -220,6 +222,8 @@ html {
 }
 
 .beneficio {
+  padding-top: 0;
+  margin-top: 0;
   padding: 60px;
   background-color: rgb(156, 120, 49);
 
@@ -316,6 +320,8 @@ html {
 }
 
 .produtos {
+  padding-top: 0;
+  margin-top: 0;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -479,6 +485,8 @@ html {
 }
 
 .varejo {
+  padding-top: calc(100px + 1rem);
+  margin-top: 0;
   background-color: rgb(156, 120, 49);
   padding: 50px;
   display: flex;

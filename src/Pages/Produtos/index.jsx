@@ -47,19 +47,19 @@ function Produtos() {
           <div className="opcoes">
             <ul>
               <li>
-                <Link href="#home">Home</Link>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <Link href="#sobre">Sobre</Link>
+                <a href="#sobre">Sobre</a>
               </li>
               <li>
-                <Link href="#beneficios">Benefícios</Link>
+                <a href="#beneficios">Benefícios</a>
               </li>
               <li>
-                <Link href="#produtos">Marcenaria</Link>
+                <a href="#produtos">Marcenaria</a>
               </li>
               <li>
-                <Link href="#varejo">Varejo</Link>
+                <a href="#varejo">Varejo</a>
               </li>
             </ul>
           </div>
