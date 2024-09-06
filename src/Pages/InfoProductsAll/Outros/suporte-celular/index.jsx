@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import "../tábuas/App.css";
+import { useState } from "react";
+import "./App.css";
 import { Link } from "react-router-dom";
 
-function Tábuas() {
+function SuporteCell() {
   const navigate = useNavigate();
   const [quantidade, setQuantidade] = useState("");
 
@@ -19,12 +18,12 @@ function Tábuas() {
     "../src/assets/pexels-ivan-samkov-4491866.jpg",
   ];
 
-  function GoingProdutos() {
-    navigate("/produtos");
-  }
-
   function GoingInfoProdutoTábua() {
     navigate("/produtos/tábuas");
+  }
+
+  function PaymentCell() {
+    navigate("/produtos/suport-cell/payment")
   }
 
   const alterarImagemPrincipal = (novaImagem) => {
@@ -122,13 +121,13 @@ function Tábuas() {
           <div className="info-gerais">
             {/* DIV PREÇO E TITULO */}
             <div className="nome-preço">
-              <h1>TÁBUA DE CHURRASCO</h1>
-              <h2>R$3.000,00</h2>
+              <h1>SUPORTE DE CELULAR</h1>
+              <h2>R$160,00</h2>
 
               <div className="preço-cartao">
                 <div className="meu-h1-card">
                   <h1>
-                    10X de<span>R$3.000,00</span>
+                    3X de R$53,33 s/ juros
                   </h1>
                 </div>
 
@@ -177,7 +176,9 @@ function Tábuas() {
                 </div>
 
                 <div className="comprar">
-                  <button>Comprar</button>
+                  <Link to="/produtos/suporte-cell/payment">
+                  <button onClick={PaymentCell}>Comprar</button>
+                  </Link>
                 </div>
 
                 <div className="observcoes-produto">
@@ -280,4 +281,4 @@ function Tábuas() {
   );
 }
 
-export default Tábuas;
+export default SuporteCell;

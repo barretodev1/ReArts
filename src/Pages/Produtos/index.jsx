@@ -1,8 +1,14 @@
 import { useState } from 'react';
 import './App.css';
+import '../Produtos/media-queries.css'
 import { Link } from "react-router-dom";
 
 function Produtos() {
+
+  function GoingInfoProdutoTábua() {
+    navigate('/produtos/tábuas')
+  }
+
   const [cardsVisiveis, setCardsVisiveis] = useState(3);
   const [selectedCategories, setSelectedCategories] = useState([]);
 
@@ -20,13 +26,13 @@ function Produtos() {
   
   const cards = [
     { id: 1, titulo: "Marcenaria Criativa", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Marcenaria Criativa"},
-    { id: 2, titulo: "Varejo", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Varejo"},
-    { id: 3, titulo: "Móveis", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Móveis"},
-    { id: 4, titulo: "Personalização", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Personalização"},
-    { id: 5, titulo: "Tábuas", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Tábuas"},
-    { id: 6, titulo: "Marcenaria Criativa", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Marcenaria Criativa"},
-    { id: 7, titulo: "Marcenaria Criativa", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Marcenaria Criativa"},
-    { id: 8, titulo: "Varejo", preço: "R$3.000,00 no pix", observações: "ou 12X R$245,99", category: "Varejo"},
+    { id: 2, titulo: "Varejo", preço: "R$100,00 no pix", observações: "ou 12X R$245,99", category: "Varejo"},
+    { id: 3, titulo: "Móveis", preço: "R$312,00 no pix", observações: "ou 12X R$245,99", category: "Móveis"},
+    { id: 4, titulo: "Personalização", preço: "R$331,00 no pix", observações: "ou 12X R$245,99", category: "Personalização"},
+    { id: 5, titulo: "Tábuas", preço: "R$421,00 no pix", observações: "ou 12X R$245,99", category: "Tábuas"},
+    { id: 6, titulo: "Marcenaria Criativa", preço: "R$124,00 no pix", observações: "ou 12X R$245,99", category: "Marcenaria Criativa"},
+    { id: 7, titulo: "Marcenaria Criativa", preço: "R$145,00 no pix", observações: "ou 12X R$245,99", category: "Marcenaria Criativa"},
+    { id: 8, titulo: "Varejo", preço: "R$135,00 no pix", observações: "ou 12X R$245,99", category: "Varejo"},
   ];
 
   const filteredCards = selectedCategories.length > 0
@@ -38,7 +44,7 @@ function Produtos() {
       {/* MEU SECTION HEADER */}
       <section className="menu">
         <header className="meu-header">
-          <div>
+          <div className='img-header'>
             <a href="http://localhost:5173/">
             <img src="src/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
@@ -47,19 +53,19 @@ function Produtos() {
           <div className="opcoes">
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="http://localhost:5173">Home</a>
               </li>
               <li>
-                <a href="#sobre">Sobre</a>
+                <a href="http://localhost:5173">Sobre</a>
               </li>
               <li>
-                <a href="#beneficios">Benefícios</a>
+                <a href="http://localhost:5173">Benefícios</a>
               </li>
               <li>
-                <a href="#produtos">Marcenaria</a>
+                <a href="http://localhost:5173">Marcenaria</a>
               </li>
               <li>
-                <a href="#varejo">Varejo</a>
+                <a href="http://localhost:5173">Varejo</a>
               </li>
             </ul>
           </div>
@@ -73,14 +79,14 @@ function Produtos() {
 
         {/* Quadrado de filtragem */}
         <div className='filtros'>
-        <div className='config'>
-<h2>Filtrar por Categoria:</h2>
-<label><input type="checkbox" value="Móveis" onChange={() => toggleCategory("Móveis")}/>Móveis</label>
-<label><input type="checkbox" value="Marcenaria Criativa" onChange={() => toggleCategory("Marcenaria Criativa")}/>Marcenaria Criativa</label>
-<label><input type="checkbox" value="Tábuas" onChange={() => toggleCategory("Tábuas")}/>Tábuas</label>
-<label><input type="checkbox" value="Personalização" onChange={() => toggleCategory("Personalização")}/>Personalização</label>
-<label><input type="checkbox" value="Varejo" onChange={() => toggleCategory("Varejo")}/> Varejo</label>
-        </div>
+          <div className='config'>
+            <h2>Filtrar por Categoria:</h2>
+            <label><input type="checkbox" value="Móveis" onChange={() => toggleCategory("Móveis")}/>Móveis</label>
+            <label><input type="checkbox" value="Marcenaria Criativa" onChange={() => toggleCategory("Marcenaria Criativa")}/>Marcenaria Criativa</label>
+            <label><input type="checkbox" value="Tábuas" onChange={() => toggleCategory("Tábuas")}/>Tábuas</label>
+            <label><input type="checkbox" value="Personalização" onChange={() => toggleCategory("Personalização")}/>Personalização</label>
+            <label><input type="checkbox" value="Varejo" onChange={() => toggleCategory("Varejo")}/> Varejo</label>
+          </div>
         </div>
 
         

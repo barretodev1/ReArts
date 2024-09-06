@@ -79,7 +79,7 @@ html {
   display: flex;
   align-items: center;
   background-image:     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Camada de gradiente escuro */
-  url("src/assets/pexels-ivan-samkov-4491846.png");
+  url("/src/assets/back.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,6 +127,9 @@ html {
   transition: 0.3s;
 
   a  {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     outline: none;
     text-decoration: none;
     font-size: 16px;
@@ -141,9 +144,6 @@ html {
 }
 
 .page-sobre {
-  padding-top: 0;
-  margin-top: 0;
-  padding: 40px;
   width: 100%;
   background-color: #dbd4d4;
 }
@@ -156,6 +156,7 @@ html {
 }
 
 .sobre-nos {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,3 +712,4 @@ html {
     margin: -0rem;
   }
 }
+

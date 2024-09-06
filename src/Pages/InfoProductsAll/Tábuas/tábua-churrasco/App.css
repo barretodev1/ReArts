@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+  }
+  
+body {
+    overflow-x: hidden;
+    background-color: #dbd4d4;
+    padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.meu-header {
+  z-index: 3;
+  background-color: rgb(156, 120, 49);
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 14vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0%;
+  padding: 20px;
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+
+  .opcoes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+
+      a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+  
+    li {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    li:hover {
+      transform: scale(1.1) translateZ(0);
+    }
+}
+
+.tela-vendas {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-venda {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  .imagem-observ {
+    display: flex;
+    flex-direction: column;
+    }
+
+  .observcoes-produto {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        font-size: 13px;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      margin-top: 0.5rem;
+      display: flex;
+      font-size: 15px;
+    }
+
+  }
+  .imagens-opcoes {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .img1 {
+      background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+    .img2 {
+      background-image: url("/src/assets/back.png");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+    .img3 {
+      background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+      background-size: cover;
+      display: flex;
+      height: 27vh;
+      width: 100%;
+    }
+
+  }
+
+  .imagem-principal {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
+    opacity: 1;
+  }
+  
+  .imagem-principal.fade {
+    opacity: 0;
+  }
+
+  .img1, .img2, .img3 {
+    cursor: pointer;
+    /* Adicione outras estilizações conforme necessário */
+  }
+
+  .info-gerais {
+    position: relative;
+    height: 76vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -3rem;
+    
+    .observcoes-produto {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, 0.2); /* Cor preta com 20% de opacidade */
+      height: 27vh;
+      width: 26vw;
+
+      .seg-container {
+        padding: 10px;
+        gap: 9px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        img {
+          display: flex;
+        }
+
+        h1 {
+          display: flex;
+          font-size: 15px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+        }
+      }
+
+      .seg-container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        hr {
+          display: flex;
+          align-items: center;
+          margin-top: 3%;
+          width:15vw;
+        }
+
+      }
+      
+      h1 {
+        display: flex;
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  .nome-preço {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 33px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+    }
+  }
+
+  .preço-cartao {
+    margin-top: 0.5rem;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meu-h1-card h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 7px;
+    width: 18vw;
+    border: 1px solid;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .meu-h1-card h1 span {
+    margin-left: 0.2rem;
+  }
+
+  .bandeiras-cartao {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+
+
+    .nossa-band {
+      background-image: url('../../../img/amex.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band1 {
+      background-image: url('../../../img/visa.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band2 {
+      background-image: url('../../../img/hipercard.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+
+    .nossa-band3 {
+      background-image: url('../../../img/mastercard.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      width: 4vw;
+      height: 6vh;
+      margin-top: 0.7rem;
+    }
+  }
+
+  .meu-p-desconto  {
+    display: flex;
+    font-size: 13px;
+    margin-top: 0.6rem;
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+    }
+
+    p span {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+    }
+  }
+
+  .meios-pag {
+    margin-top: 0.5rem;
+    display: flex;
+
+    p {
+      cursor: pointer;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+    }
+  }
+
+  .separa {
+    margin-top: 1.1rem;
+    width: 63vh;
+  }
+
+  .quantidade input,
+  .quantidade {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  
+    input {
+      display: flex;
+      padding: 30px 30px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+    }
+  
+    select {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+
+  .quantidade select {
+    width: 40vw; 
+    padding: 10px; /* Ajusta o padding para que fiquem com uma altura similar */
+    box-sizing: border-box;
+  }
+
+  .frete-gratis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.4rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    gap: 6%;
+    
+    h1 {
+      color: black;
+      display: flex;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+  }
+}
+
+.comprar {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.7rem;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 5%;
+
+  button {
+    transition: 0.4s;
+    border-radius: 10px;
+    width: 18vw;
+    padding: 10px;
+    background-color: rgb(156, 120, 49);
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: rgb(183, 130, 23);
+    transition: 0.4s;
+  }
+ }
+}
+
+.tela-sugestao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+
+  h1 {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .card-produto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+    gap: 1rem;
+  }
+
+  .imagem-produto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+    background-size: cover;
+    width: 20vw;
+    height: 38vh;
+  }
+}

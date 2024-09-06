@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+    padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+} 
+
+.meu-header-payment {
+  z-index: 5;
+  background-color: rgb(156, 120, 49);
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  top: 0%;
+  padding: 20px;
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26vh;
+  }
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.payment-screen {
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  width: 50vw;  
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+  }
+
+}
+
+.div-compra {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  width: 50vw; 
+
+  .border-input {
+    border: 1px solid rgba(0, 0, 0, 0.5); /* A borda parece mais fina devido à transparência */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+
+  .input-1-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    input {
+      display: flex;
+      width: 20vw;
+      height: 6vh;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding:13px;
+      background-color: #ffffff;
+      border-radius: 30px;
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 10px;
+      font-style: normal;
+      margin-left: 20.7rem;
+      color: rgb(0, 0, 0);
+      margin-top: -0.6rem;
+    }
+  }
+
+  .seg-container-paymenttt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    hr {
+      display: flex;
+      align-items: center;
+      margin-top: 6%;
+      width:35vw;
+    }
+
+  }
+
+  input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 13px;
+    font-style: normal;
+    display: flex;
+    color: black;
+  }
+
+  .input-1-payment-rua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      display: flex;
+      width: 41.6vw;
+      height: 6vh;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding:13px;
+      background-color: #ffffff;
+      border-radius: 30px;
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-size: 10px;
+      margin-top: 0.3rem;
+      font-style: normal;
+      margin-right: 13.3rem;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  .paymant-opcoes {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .seg-container-payment {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .seg-container-payment2 {
+      margin-top: 1rem;
+      gap: 1rem;
+      margin: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 15px;
+        font-style: normal; 
+      }
+
+      button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 10px;
+        width: 10vw;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        border-radius: 40px;
+        font-size: 12px;
+        font-style: normal;
+      
+      }
+    }
+  }
+}

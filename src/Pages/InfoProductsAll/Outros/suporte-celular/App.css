@@ -427,19 +427,20 @@ html {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   border-radius: 10px;
   padding: 10px;
-  background-color: rgb(156, 120, 49);
   gap: 5%;
-  transition: 0.4s;
-  
+
   button {
+    transition: 0.4s;
+    border-radius: 10px;
+    width: 18vw;
+    padding: 10px;
+    background-color: rgb(156, 120, 49);
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    background-color: transparent;
     border: none;
     align-items: center;
     justify-content: center;
@@ -447,12 +448,12 @@ html {
     display: flex;
     font-size: 15px;
   }
- }
 
- .comprar:hover {
-  background-color: rgb(183, 130, 23);
-  transition: 0.4s;
-}
+  button:hover {
+    background-color: rgb(183, 130, 23);
+    transition: 0.4s;
+  }
+ }
 }
 
 .tela-sugestao {
@@ -460,7 +461,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem;
+  padding: 10rem;
 
   h1 {
     display: flex;

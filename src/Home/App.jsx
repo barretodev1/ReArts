@@ -1,20 +1,36 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
-import Produtos from '../Pages/Produtos'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from '../Pages/Scroll.js';
+import Produtos from '../Pages/Produtos';
 import HomePage from '../Pages/Inicial';
-import Tábuas from '../Pages/InfoProductsAll/tábuas'
-import ScrollToTop from '../Pages/Scroll.js'
+// PRODUTOS
+import TábuaChurrasco from '../Pages/InfoProductsAll/Tábuas/tábua-churrasco/index.jsx';
+import TábuaPizza from '../Pages/InfoProductsAll/Tábuas/tábua-pizza/index.jsx';
+import SuporteCell from '../Pages/InfoProductsAll/Outros/suporte-celular/index.jsx';
+
+// TELA DE PAGAMENTO DOS PRODUTOS
+import PaymentChurrasco from '../Pages/PagePayment/PaymentTábuas/PaymentTabuaChurrasco/index.jsx';
+import PaymentPizza from '../Pages/PagePayment/PaymentTábuas/PaymentTabuaPizza/index.jsx';
+import PaymentCell from '../Pages/PagePayment/PaymentOutros/PaymentCell/index.jsx';
 
 function App() {
 
   return (
     <BrowserRouter>
      <ScrollToTop />
-      <Routes>
-      <Route path="/" element={<HomePage />} /> {/* Rota para a página inicial */}
-      <Route path="/produtos" element={<Produtos />}/>
-      <Route path="/produtos/tábuas" element={<Tábuas />}/>
+      <Routes>      
+        <Route path="/" element={<HomePage />} />
+        <Route path="/produtos" element={<Produtos />}/>
 
-          
+        {/* PRODUTOS */}
+        <Route path="/produtos/tábuas" element={<TábuaChurrasco />}/>
+        <Route path="/produtos/tábuas-pizza" element={<TábuaPizza />}/>
+        <Route path="/produtos/suporte-cell" element={<SuporteCell />}/>
+
+        {/* TELA DE PAGAMENTO DE CADA PRODUTO */}
+        <Route path="/produtos/tábuas/payment" element={<PaymentChurrasco />}/>
+        <Route path="/produtos/tábuas-pizza/payment" element={<PaymentPizza />}/>
+        <Route path="/produtos/suporte-cell/payment" element={<PaymentCell />}/>
+
       </Routes>
     </BrowserRouter>
   )
