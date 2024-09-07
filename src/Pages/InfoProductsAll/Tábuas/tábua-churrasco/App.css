@@ -255,36 +255,40 @@ html {
 
   .preço-cartao {
     margin-top: 0.5rem;
-    width: 18vw;
+    width: 28vw;
     display: flex;
     flex-direction: column;
   }
 
-  .meu-h1-card h1 {
+  .meu-h1-card  {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 7px 7px;
+    margin-left: -5px;
+    border: none;
     width: 18vw;
-    border: 1px solid;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-  }
-
-  .meu-h1-card h1 span {
-    margin-left: 0.2rem;
+    
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+    }
   }
 
   .bandeiras-cartao {
     display: flex;
     flex-direction: row;
     gap: 0.6rem;
+    
 
 
-    .nossa-band {
-      background-image: url('../../../img/amex.png');
-      background-size: cover;
+    .nossa-band {      
+      background-image: url('/src/img/elo.png');
       display: flex;
       align-items: center;
       width: 4vw;
@@ -293,17 +297,17 @@ html {
     }
 
     .nossa-band1 {
-      background-image: url('../../../img/visa.png');
+      background-image: url('/src/img/hiper.png');
       background-size: cover;
       display: flex;
       align-items: center;
       width: 4vw;
-      height: 6vh;
+      height: 16vh;
       margin-top: 0.7rem;
     }
 
     .nossa-band2 {
-      background-image: url('../../../img/hipercard.png');
+      background-image: url('');
       background-size: cover;
       display: flex;
       align-items: center;
@@ -313,7 +317,7 @@ html {
     }
 
     .nossa-band3 {
-      background-image: url('../../../img/mastercard.png');
+      background-image: url('');
       background-size: cover;
       display: flex;
       align-items: center;
@@ -416,7 +420,7 @@ html {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
   border-radius: 10px;
   padding: 10px;
   gap: 5%;
@@ -476,4 +480,8 @@ html {
     width: 20vw;
     height: 38vh;
   }
+}
+
+.meu-h1-card-responsive {
+  display: none;
 }

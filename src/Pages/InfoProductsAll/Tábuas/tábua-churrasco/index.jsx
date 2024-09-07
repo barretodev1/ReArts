@@ -120,6 +120,12 @@
                     </h1>
                   </div>
 
+                  <div className="meu-h1-card-responsive">
+                    <h1>
+                      3X de R$53,33 s/ juros
+                    </h1>
+                  </div>
+
                   <div className="bandeiras-cartao">
                     <div className="nossa-band"></div>
                     <div className="nossa-band1"></div>
@@ -186,9 +192,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* DIV VALOR NO CARTÃO */}
+                </div>
             </div>
           </div>
         </section>
