@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
+import '../PaymentTabuaChurrasco/media-queries.css'
 
 function Payment() {
   const [formData, setFormData] = useState({
@@ -150,7 +151,7 @@ function Payment() {
               <div className="seg-container-payment2">
                 <img src="/src/assets/icons8-bilhete-40 (1).png" alt="" />
                 <h1>BOLETO</h1>
-                <a href="https://mpago.li/2kNcDhh">COMPRAR</a>
+                <a className="button" href="https://mpago.li/2kNcDhh">COMPRAR</a>
               </div>
 
               {/* CARTÃO DE CREDITO */}
@@ -160,7 +161,7 @@ function Payment() {
                   alt=""
                 />
                 <h1>CARTÃO</h1>
-                <a href="https://mpago.li/2kNcDhh">COMPRAR</a>
+                <a className="button" href="https://mpago.li/2kNcDhh">COMPRAR</a>
               </div>
             </div>
           </div>

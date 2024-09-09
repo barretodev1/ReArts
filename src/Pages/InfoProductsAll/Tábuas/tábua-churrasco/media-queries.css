@@ -133,7 +133,15 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: blueviolet;
+      margin-bottom: -3rem;
+
+      h1 {
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
     }
 
     .imagem-principal {
@@ -153,10 +161,6 @@
       /* Adicione outras estilizações conforme necessário */
     }
 
-    .observcoes-produto {
-      display: none;
-     }  
-
      .info-gerais {
       display: flex;
       margin-top: -1.8rem;
@@ -165,11 +169,20 @@
       justify-content: center;
       width: 100%;
      }
+
+     .info-gerais .observcoes-produto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70vw;
+      margin-left: -6.3rem;
+     }  
+   
      
-  .info-gerais .nome-preço {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .info-gerais .nome-preço {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
     h1 {
       font-size: 22px;
@@ -187,7 +200,6 @@
     justify-content: center;
     border: none;
     width: 68vw;
-    margin-top: rem;
     border: 1px solid;
     height: 6vh;
     margin-left: -6.2rem;
@@ -270,6 +282,89 @@
       transition: 0.4s;
     }
    }
+  }
+
+  .tela-sugestao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215vh;
+    margin-top: 8rem;
+    gap: -4rem;
+  }
+
+  .tela-sugestao .text-sugestao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 90vw;
+  }
+
+  .tela-sugestao .card-produto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 90vw;
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2{
+    display: flex;
+    width: 95vw;
+    gap: 0.3rem;
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2 .imagem-produto2{
+    display: flex;
+    width: 74vw;
+    gap: 0.4rem;
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2 .h1-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2 .h2-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2 .h3-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .tela-sugestao .card-produto2 .produto-card2 .botao-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    button {
+      font-size: 16px;
+      height: 7vh;
+      width: 60vw;
+    }
   }
 }
 
