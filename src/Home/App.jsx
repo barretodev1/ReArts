@@ -19,12 +19,12 @@ function App() {
      <ScrollToTop />
       <Routes>      
         <Route path="/ReArts" element={<HomePage />} />
-        <Route path="/ReArts/produtos" element={<Produtos />}/>
+        <Route path="/produtos" element={<Produtos />}/>
 
         {/* PRODUTOS */}
-        <Route path="/ReArts/produtos/tábuas" element={<TábuaChurrasco />}/>
-        <Route path="/ReArts/produtos/tábuas-pizza" element={<TábuaPizza />}/>
-        <Route path="/ReArts/produtos/suporte-cell" element={<SuporteCell />}/>
+        <Route path="/produtos/tábuas" element={<TábuaChurrasco />}/>
+        <Route path="/produtos/tábuas-pizza" element={<TábuaPizza />}/>
+        <Route path="/produtos/suporte-cell" element={<SuporteCell />}/>
 
         {/* TELA DE PAGAMENTO DE CADA PRODUTO */}
         <Route path="/produtos/tábuas/payment" element={<PaymentChurrasco />}/>
