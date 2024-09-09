@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
      <ScrollToTop />
       <Routes>      
-        <Route path="/ReArts" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/produtos" element={<Produtos />}/>
 
         {/* PRODUTOS */}
