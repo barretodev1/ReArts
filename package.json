@@ -1,5 +1,4 @@
 {
-  "homepage": "https://rearts.netlify.app/",
   "name": "teste",
   "private": true,
   "version": "0.0.0",
@@ -7,10 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .", 
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "master -d dist"
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
