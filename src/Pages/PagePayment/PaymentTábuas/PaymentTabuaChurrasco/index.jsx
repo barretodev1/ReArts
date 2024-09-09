@@ -126,7 +126,6 @@ function Payment() {
                 required
                 placeholder="Nome igual ao do pagador??"
                 type="text"
-                maxLength="8"
               />
             </div>
 

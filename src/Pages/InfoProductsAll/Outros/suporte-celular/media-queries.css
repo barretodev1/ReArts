@@ -180,6 +180,8 @@
    
      
     .info-gerais .nome-preço {
+      background-color: aqua;
+      width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;

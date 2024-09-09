@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./App.css";
+import "../suporte-celular/App.css";
+import "../suporte-celular/media-queries.css"
 import { Link } from "react-router-dom";
 
 function SuporteCell() {
@@ -8,13 +9,13 @@ function SuporteCell() {
   const [quantidade, setQuantidade] = useState("");
 
   const [imagemPrincipal, setImagemPrincipal] = useState(
-    "../src/assets/pexels-ivan-samkov-4491866.jpg"
+    "../src/assets/pexels-ivan-samkov-449184666666666666.jpg"
   );
   const [imagemVisivel, setImagemVisivel] = useState(true); // Estado para controlar a visibilidade da imagem
 
   const imagens = [
     "../src/assets/pexels-ivan-samkov-4491866.jpg",
-    "../src/assets/pexels-ivan-samkov-4491846.png",
+    "../src/assets/pexels-ivan-samkov-449184666666666666.jpg",
     "../src/assets/pexels-ivan-samkov-4491866.jpg",
   ];
 
@@ -22,8 +23,8 @@ function SuporteCell() {
     navigate("/produtos/tábuas");
   }
 
-  function PaymentCell() {
-    navigate("/produtos/suport-cell/payment")
+  function Payment() {
+    navigate("/produtos/tábuas/payment")
   }
 
   const alterarImagemPrincipal = (novaImagem) => {
@@ -39,7 +40,7 @@ function SuporteCell() {
       {/* Section HEADER */}
       <section className="menu">
         <header className="meu-header">
-          <div>
+          <div className="img-header">
             <a href="http://localhost:5173/">
               <img src="../src/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
@@ -67,16 +68,6 @@ function SuporteCell() {
         </header>
       </section>
 
-      {/*SECTION DE FRASE MOTIVAÇÃO*/}
-      <section className="infos">
-        <div>
-          <h1>
-            "Você está a um clique de transformar sua casa com a nossa
-            marcenaria criativa. Não perca essa oportunidade única"
-          </h1>
-        </div>
-      </section>
-
       {/* SECTION TELA DE VENDAS   */}
       <section className="tela-vendas">
         <div className="cards-venda">
@@ -95,12 +86,10 @@ function SuporteCell() {
           {/* CARD DE IMAGEM PRINCIPAL */}
           <div className="imagem-obeserv">
             <div
-              className={`imagem-principal ${imagemVisivel ? "" : "fade"}`}
-              style={{ backgroundImage: `url(${imagemPrincipal})` }}
-            ></div>
+              className={`imagem-principal ${imagemVisivel ? "" : "fade"}`}style={{ backgroundImage: `url(${imagemPrincipal})` }}></div>
             <div className="observcoes-produto">
               <h1>
-                A Tábua de Churrasco Premium é fabricada em madeira nobre de
+                A Suporte para CelularPremium é fabricada em madeira nobre de
                 alta qualidade,<br></br> selecionada cuidadosamente para
                 garantir durabilidade e resistência. Com um<br></br> acabamento
                 refinado, a superfície é tratada com óleos e ceras atóxicas,
@@ -121,11 +110,17 @@ function SuporteCell() {
           <div className="info-gerais">
             {/* DIV PREÇO E TITULO */}
             <div className="nome-preço">
-              <h1>SUPORTE DE CELULAR</h1>
+              <h1>SUPORTE PARA CELULAR</h1>
               <h2>R$160,00</h2>
 
               <div className="preço-cartao">
                 <div className="meu-h1-card">
+                  <h1>
+                    3X de R$53,33 s/ juros
+                  </h1>
+                </div>
+
+                <div className="meu-h1-card-responsive">
                   <h1>
                     3X de R$53,33 s/ juros
                   </h1>
@@ -176,8 +171,8 @@ function SuporteCell() {
                 </div>
 
                 <div className="comprar">
-                  <Link to="/produtos/suporte-cell/payment">
-                  <button onClick={PaymentCell}>Comprar</button>
+                  <Link to="/produtos/tábuas/payment">
+                  <button onClick={Payment}>Comprar</button>
                   </Link>
                 </div>
 
@@ -197,9 +192,7 @@ function SuporteCell() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* DIV VALOR NO CARTÃO */}
+              </div>
           </div>
         </div>
       </section>
@@ -234,7 +227,7 @@ function SuporteCell() {
             </Link>
           </div>
 
-          <div className="produto-card2" id="tábua de churrasco gourmet">
+          <div className="produto-card2" id="Suporte para Celulargourmet">
             {" "}
             {/*CARD COMPLETO */}
             <Link to="/produtos">
@@ -242,7 +235,7 @@ function SuporteCell() {
             </Link>{" "}
             {/*CARD IMAGEM */}
             <div className="h1-card">
-              <h1>Tábua de Churrasco Gourmet</h1>
+              <h1>Suporte para Celular</h1>
             </div>
             <div className="h2-card">
               <h2>R$3.000,00 no pix</h2>
@@ -255,7 +248,7 @@ function SuporteCell() {
             </Link>
           </div>
 
-          <div className="produto-card2" id="tábua de churrasco gourmet">
+          <div className="produto-card2" id="Marcenaria Criativa">
             {" "}
             {/*CARD COMPLETO */}
             <Link to="/produtos">
@@ -263,7 +256,7 @@ function SuporteCell() {
             </Link>{" "}
             {/*CARD IMAGEM */}
             <div className="h1-card">
-              <h1>Tábua de Churrasco Gourmet</h1>
+              <h1>Suporte para Celular</h1>
             </div>
             <div className="h2-card">
               <h2>R$3.000,00 no pix</h2>
@@ -281,4 +274,4 @@ function SuporteCell() {
   );
 }
 
-export default SuporteCell;
+export default SuporteCell

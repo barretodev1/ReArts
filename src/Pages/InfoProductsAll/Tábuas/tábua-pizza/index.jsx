@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./App.css";
+import "../tábua-pizza/App.css";
+import "../tábua-pizza/media-queries.css"
 import { Link } from "react-router-dom";
 
 function TábuasPizza() {
@@ -8,13 +9,13 @@ function TábuasPizza() {
   const [quantidade, setQuantidade] = useState("");
 
   const [imagemPrincipal, setImagemPrincipal] = useState(
-    "../src/assets/pexels-ivan-samkov-4491866.jpg"
+    "../src/assets/pexels-ivan-samkov-449184666666666666.jpg"
   );
   const [imagemVisivel, setImagemVisivel] = useState(true); // Estado para controlar a visibilidade da imagem
 
   const imagens = [
     "../src/assets/pexels-ivan-samkov-4491866.jpg",
-    "../src/assets/pexels-ivan-samkov-4491846.png",
+    "../src/assets/pexels-ivan-samkov-449184666666666666.jpg",
     "../src/assets/pexels-ivan-samkov-4491866.jpg",
   ];
 
@@ -22,8 +23,8 @@ function TábuasPizza() {
     navigate("/produtos/tábuas");
   }
 
-  function PaymentPizza() {
-    navigate("/produtos/tábuas-pizza/payment")
+  function Payment() {
+    navigate("/produtos/tábuas/payment")
   }
 
   const alterarImagemPrincipal = (novaImagem) => {
@@ -39,7 +40,7 @@ function TábuasPizza() {
       {/* Section HEADER */}
       <section className="menu">
         <header className="meu-header">
-          <div>
+          <div className="img-header">
             <a href="http://localhost:5173/">
               <img src="../src/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
@@ -67,16 +68,6 @@ function TábuasPizza() {
         </header>
       </section>
 
-      {/*SECTION DE FRASE MOTIVAÇÃO*/}
-      <section className="infos">
-        <div>
-          <h1>
-            "Você está a um clique de transformar sua casa com a nossa
-            marcenaria criativa. Não perca essa oportunidade única"
-          </h1>
-        </div>
-      </section>
-
       {/* SECTION TELA DE VENDAS   */}
       <section className="tela-vendas">
         <div className="cards-venda">
@@ -95,19 +86,17 @@ function TábuasPizza() {
           {/* CARD DE IMAGEM PRINCIPAL */}
           <div className="imagem-obeserv">
             <div
-              className={`imagem-principal ${imagemVisivel ? "" : "fade"}`}
-              style={{ backgroundImage: `url(${imagemPrincipal})` }}
-            ></div>
+              className={`imagem-principal ${imagemVisivel ? "" : "fade"}`}style={{ backgroundImage: `url(${imagemPrincipal})` }}></div>
             <div className="observcoes-produto">
               <h1>
-                A Tábua de Churrasco Premium é fabricada em madeira nobre de
+                A Suporte para CelularPremium é fabricada em madeira nobre de
                 alta qualidade,<br></br> selecionada cuidadosamente para
                 garantir durabilidade e resistência. Com um<br></br> acabamento
                 refinado, a superfície é tratada com óleos e ceras atóxicas,
                 realçando<br></br> a beleza natural da madeira. É entregue
                 pronta para uso e acompanha um manual<br></br> de cuidados para
                 garantir a longevidade do produto. Peso aproximado da Tábua
-                <br></br> de Churrasco Premium: 2,5kg. Dimensão da tábua: 40cm x
+                <br></br> de Pizza Premium: 2,5kg. Dimensão da tábua: 40cm x
                 30cm x 3cm (LxPxA).<br></br>
                 Importante: Como nossos produtos são feitos artesanalmente,
                 podem apresentar<br></br> variações de até 3mm nas medidas, para
@@ -122,12 +111,18 @@ function TábuasPizza() {
             {/* DIV PREÇO E TITULO */}
             <div className="nome-preço">
               <h1>TÁBUA DE PIZZA</h1>
-              <h2>R$159,00</h2>
+              <h2>R$160,00</h2>
 
               <div className="preço-cartao">
                 <div className="meu-h1-card">
                   <h1>
-                    3X de R$48,00 s/ juros
+                    3X de R$53,33 s/ juros
+                  </h1>
+                </div>
+
+                <div className="meu-h1-card-responsive">
+                  <h1>
+                    3X de R$53,33 s/ juros
                   </h1>
                 </div>
 
@@ -176,8 +171,8 @@ function TábuasPizza() {
                 </div>
 
                 <div className="comprar">
-                  <Link to="/produtos/tábuas-pizza/payment">
-                  <button onClick={PaymentPizza}>Comprar</button>
+                  <Link to="/produtos/tábuas/payment">
+                  <button onClick={Payment}>Comprar</button>
                   </Link>
                 </div>
 
@@ -197,9 +192,7 @@ function TábuasPizza() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* DIV VALOR NO CARTÃO */}
+              </div>
           </div>
         </div>
       </section>
@@ -211,7 +204,7 @@ function TábuasPizza() {
         </div>
 
         <div className="card-produto2">
-          <div className="produto-card2" id="tábua de churrasco">
+          <div className="produto-card2" id="tábua de Pizza">
             {" "}
             {/*CARD COMPLETO */}
             <Link to="/produtos/tábuas" onClick={GoingInfoProdutoTábua}>
@@ -219,7 +212,7 @@ function TábuasPizza() {
             </Link>{" "}
             {/*CARD IMAGEM */}
             <div className="h1-card">
-              <h1>Tábuas de Churrasco</h1>
+              <h1>Tábuas de Pizza</h1>
             </div>
             <div className="h2-card">
               <h2>R$3.000,00 no pix</h2>
@@ -234,7 +227,7 @@ function TábuasPizza() {
             </Link>
           </div>
 
-          <div className="produto-card2" id="tábua de churrasco gourmet">
+          <div className="produto-card2" id="Suporte para Celular">
             {" "}
             {/*CARD COMPLETO */}
             <Link to="/produtos">
@@ -242,7 +235,7 @@ function TábuasPizza() {
             </Link>{" "}
             {/*CARD IMAGEM */}
             <div className="h1-card">
-              <h1>Tábua de Churrasco Gourmet</h1>
+              <h1>Suporte para CelularGourmet</h1>
             </div>
             <div className="h2-card">
               <h2>R$3.000,00 no pix</h2>
@@ -255,7 +248,7 @@ function TábuasPizza() {
             </Link>
           </div>
 
-          <div className="produto-card2" id="tábua de churrasco gourmet">
+          <div className="produto-card2" id="Suporte para Celulargourmet">
             {" "}
             {/*CARD COMPLETO */}
             <Link to="/produtos">
@@ -263,7 +256,7 @@ function TábuasPizza() {
             </Link>{" "}
             {/*CARD IMAGEM */}
             <div className="h1-card">
-              <h1>Tábua de Churrasco Gourmet</h1>
+              <h1>Suporte para CelularGourmet</h1>
             </div>
             <div className="h2-card">
               <h2>R$3.000,00 no pix</h2>
@@ -281,4 +274,4 @@ function TábuasPizza() {
   );
 }
 
-export default TábuasPizza;
+export default TábuasPizza
