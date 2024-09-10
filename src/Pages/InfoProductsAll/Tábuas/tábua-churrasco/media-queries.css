@@ -177,6 +177,13 @@
       width: 70vw;
       margin-left: -6.3rem;
      }  
+
+     .info-gerais .observcoes-produto .seg-container {
+      h1 {
+        font-size: 19px;
+      }
+  
+     }
    
      
     .info-gerais .nome-preço {
@@ -294,7 +301,7 @@
     align-items: center;
     justify-content: center;
     height: 215vh;
-    margin-top: 8rem;
+    margin-top: 1rem;
     gap: -4rem;
   }
 
@@ -315,9 +322,10 @@
   }
 
   .tela-sugestao .card-produto2 .produto-card2{
+    height: 70vh;
     display: flex;
     width: 95vw;
-    gap: 0.3rem;
+    gap: 2.3rem;
   }
 
   .tela-sugestao .card-produto2 .produto-card2 .imagem-produto2{
