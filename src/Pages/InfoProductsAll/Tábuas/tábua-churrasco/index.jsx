@@ -3,11 +3,11 @@
   import "./App.css";
   import "../tábua-churrasco/media-queries.css"
   import { Link } from "react-router-dom";
-  import Img1and3 from '../../../../../dist/assets/card-img.png'
-  import Img2 from '../../../../../dist/assets/pexels-ivan-samkov-449184666666666666.png'
-  import FreteGratis from '../../../../../dist/assets/icons8-em-trânsito-20.png'
-  import DadosSeguros from '../../../../../dist/assets/icons8-cadeado-40.png'
-  import IconeDevolução from '../../../../../dist/assets/icons8-reverter-40.png'
+  import Img1and3 from '../../../../../public/assets/card-img.png'
+  import Img2 from '../../../../../public/assets/pexels-ivan-samkov-449184666666666666.png'
+  import FreteGratis from '../../../../../public/assets/icons8-em-trânsito-20.png'
+  import DadosSeguros from '../../../../../public/assets/icons8-cadeado-40.png'
+  import IconeDevolução from '../../../../../public/assets/icons8-reverter-40.png'
 
 
   function Tábuas() {
@@ -48,7 +48,7 @@
           <header className="meu-header">
             <div className="img-header">
               <a href="http://localhost:5173/">
-                <img src="../dist/assets/MARCENARIA-removebg-preview.png" alt="" />
+                <img src="../public/assets/MARCENARIA-removebg-preview.png" alt="" />
               </a>
             </div>
 

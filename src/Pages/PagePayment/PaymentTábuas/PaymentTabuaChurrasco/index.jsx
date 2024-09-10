@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 import '../PaymentTabuaChurrasco/media-queries.css'
-import CartaoLogo from '../../../../../dist/assets/icons8-parte-traseira-de-cartão-de-banco-40.png'
-import BoletoLogo from '../../../../../dist/assets/icons8-bilhete-40 (1).png'
-import PixLogo from '../../../../../dist/assets/icons8-foto-40.png'
+import CartaoLogo from '../../../../../public/assets/icons8-parte-traseira-de-cartão-de-banco-40.png'
+import BoletoLogo from '../../../../../public/assets/icons8-bilhete-40 (1).png'
+import PixLogo from '../../../../../public/assets/icons8-foto-40.png'
 
 function Payment() {
   const [formData, setFormData] = useState({
@@ -44,7 +44,7 @@ function Payment() {
         <header className="meu-header-payment">
           <div>
             <a href="http://localhost:5173/">
-              <img src="/dist/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src="/public/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
           </div>
         </header>

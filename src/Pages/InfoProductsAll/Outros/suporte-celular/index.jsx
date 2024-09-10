@@ -9,14 +9,14 @@ function SuporteCell() {
   const [quantidade, setQuantidade] = useState("");
 
   const [imagemPrincipal, setImagemPrincipal] = useState(
-    "../dist/assets/pexels-ivan-samkov-449184666666666666.jpg"
+    "../public/assets/pexels-ivan-samkov-449184666666666666.jpg"
   );
   const [imagemVisivel, setImagemVisivel] = useState(true); // Estado para controlar a visibilidade da imagem
 
   const imagens = [
-    "../dist/assets/pexels-ivan-samkov-4491866.jpg",
-    "../dist/assets/pexels-ivan-samkov-449184666666666666.jpg",
-    "../dist/assets/pexels-ivan-samkov-4491866.jpg",
+    "../public/assets/pexels-ivan-samkov-4491866.jpg",
+    "../public/assets/pexels-ivan-samkov-449184666666666666.jpg",
+    "../public/assets/pexels-ivan-samkov-4491866.jpg",
   ];
 
   function GoingInfoProdutoTábua() {
@@ -42,7 +42,7 @@ function SuporteCell() {
         <header className="meu-header">
           <div className="img-header">
             <a href="http://localhost:5173/">
-              <img src="../dist/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src="../public/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
           </div>
 
@@ -166,7 +166,7 @@ function SuporteCell() {
                 </div>
 
                 <div className="frete-gratis">
-                  <img src="../dist/assets/icons8-em-trânsito-20.png" alt="" />
+                  <img src="../public/assets/icons8-em-trânsito-20.png" alt="" />
                   <h1>Frete Grátis</h1>
                 </div>
 
@@ -178,7 +178,7 @@ function SuporteCell() {
 
                 <div className="observcoes-produto">
                   <div className="seg-container">
-                    <img src="../dist/assets/icons8-cadeado-40.png" alt="" />
+                    <img src="../public/assets/icons8-cadeado-40.png" alt="" />
                     <h1>Dados seguros em toda a compra</h1>
                   </div>
 
@@ -187,7 +187,7 @@ function SuporteCell() {
                   </div>
 
                   <div className="seg-container">
-                    <img src="../dist/assets/icons8-reverter-40.png" alt="" />
+                    <img src="../public/assets/icons8-reverter-40.png" alt="" />
                     <h1>Devolução ou troca disponíveis</h1>
                   </div>
                 </div>

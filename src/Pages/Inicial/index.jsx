@@ -5,18 +5,18 @@
   import AOS from 'aos'
   import "./App.css";
   import "../Inicial/media-iphoneX.css"
-  import  MarcenariaLogo  from '../../../dist/assets/MARCENARIA-removebg-preview.png'
-  import SobreImg from '../../../dist/assets/sobre.png'
-  import CaminhaoLogo from '../../../dist/assets/icons8-caminhão-100.png'
-  import DinheiroLogo from '../../../dist/assets/icons8-dinheiro-100.png'
-  import GarantiaLogo from '../../../dist/assets/icons8-garantia-100.png'
-  import QualidadeLogo from '../../../dist/assets/icons8-qualidade-100.png'
-  import ReguaLogo from '../../../dist/assets/icons8-régua-100.png'
-  import CreditoLogo from '../../../dist/assets/icons8-cartão-100.png'
-  import LogoInsta from '../../../dist/assets/icons8-instagram-20 (1).png'
-  import LogoTikTok from '../../../dist/assets/icons8-tiktok-20 (3).png'
-  import LogoWpp from '../../../dist/assets/icons8-whatsapp-20 (1).png'
-  import LogoFacebook from '../../../dist/assets/icons8-facebook-20.png'
+  import  MarcenariaLogo  from '../../../public/assets/MARCENARIA-removebg-preview.png'
+  import SobreImg from '../../../public/assets/sobre.png'
+  import CaminhaoLogo from '../../../public/assets/icons8-caminhão-100.png'
+  import DinheiroLogo from '../../../public/assets/icons8-dinheiro-100.png'
+  import GarantiaLogo from '../../../public/assets/icons8-garantia-100.png'
+  import QualidadeLogo from '../../../public/assets/icons8-qualidade-100.png'
+  import ReguaLogo from '../../../public/assets/icons8-régua-100.png'
+  import CreditoLogo from '../../../public/assets/icons8-cartão-100.png'
+  import LogoInsta from '../../../public/assets/icons8-instagram-20 (1).png'
+  import LogoTikTok from '../../../public/assets/icons8-tiktok-20 (3).png'
+  import LogoWpp from '../../../public/assets/icons8-whatsapp-20 (1).png'
+  import LogoFacebook from '../../../public/assets/icons8-facebook-20.png'
 
   function App() {
 
