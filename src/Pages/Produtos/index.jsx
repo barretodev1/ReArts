@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import '../Produtos/media-queries.css'
 import { Link } from "react-router-dom";
-import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
+import  MarcenariaLogo  from '../../../public/assets/MARCENARIA-removebg-preview.png'
 
 function Produtos() {
 

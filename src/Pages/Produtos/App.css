@@ -10,6 +10,17 @@ body {
     padding: 0%;
 }
 
+.card-produto2 .produto-card2 .imagem-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-image: url("/public/assets/card-img.png");
+  background-size: cover;
+  width: 26vw;
+  height: 43vh;
+}
+
 html {
   scroll-behavior: smooth;
 } 
