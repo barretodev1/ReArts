@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 import '../PaymentTabuaChurrasco/media-queries.css'
+import CartaoLogo from '../../../../../dist/assets/icons8-parte-traseira-de-cartão-de-banco-40.png'
+import BoletoLogo from '../../../../../dist/assets/icons8-bilhete-40 (1).png'
+import PixLogo from '../../../../../dist/assets/icons8-foto-40.png'
 
 function Payment() {
   const [formData, setFormData] = useState({
@@ -141,14 +144,14 @@ function Payment() {
             <div className="paymant-opcoes">
               {/* PIX */}
               <div className="seg-container-payment2">
-                <img src="/dist/assets/icons8-foto-40.png" alt="" />
+                <img src={PixLogo} alt="" />
                 <h1>PIX</h1>
                 <a className="button" href="https://mpago.la/1oRjTTa">COMPRAR</a>
               </div>
 
               {/* BOLETO */}
               <div className="seg-container-payment2">
-                <img src="/dist/assets/icons8-bilhete-40 (1).png" alt="" />
+                <img src={BoletoLogo} alt="" />
                 <h1>BOLETO</h1>
                 <a className="button" href="https://mpago.li/2kNcDhh">COMPRAR</a>
               </div>
@@ -156,7 +159,7 @@ function Payment() {
               {/* CARTÃO DE CREDITO */}
               <div className="seg-container-payment2">
                 <img
-                  src="/dist/assets/icons8-parte-traseira-de-cartão-de-banco-40.png"
+                  src={CartaoLogo}
                   alt=""
                 />
                 <h1>CARTÃO</h1>

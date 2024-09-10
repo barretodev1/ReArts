@@ -3,20 +3,26 @@
   import "./App.css";
   import "../tábua-churrasco/media-queries.css"
   import { Link } from "react-router-dom";
+  import Img1and3 from '../../../../../dist/assets/card-img.png'
+  import Img2 from '../../../../../dist/assets/pexels-ivan-samkov-449184666666666666.png'
+  import FreteGratis from '../../../../../dist/assets/icons8-em-trânsito-20.png'
+  import DadosSeguros from '../../../../../dist/assets/icons8-cadeado-40.png'
+  import IconeDevolução from '../../../../../dist/assets/icons8-reverter-40.png'
+
 
   function Tábuas() {
     const navigate = useNavigate();
     const [quantidade, setQuantidade] = useState("");
 
     const [imagemPrincipal, setImagemPrincipal] = useState(
-      "../dist/assets/pexels-ivan-samkov-449184666666666666.jpg"
+      Img2
     );
     const [imagemVisivel, setImagemVisivel] = useState(true); // Estado para controlar a visibilidade da imagem
 
     const imagens = [
-      "../dist/assets/pexels-ivan-samkov-4491866.jpg",
-      "../dist/assets/pexels-ivan-samkov-449184666666666666.jpg",
-      "../dist/assets/pexels-ivan-samkov-4491866.jpg",
+      Img1and3,
+      Img2,
+      Img1and3,
     ];
 
     function GoingInfoProdutoTábua() {
@@ -166,7 +172,7 @@
                   </div>
 
                   <div className="frete-gratis">
-                    <img src="../dist/assets/icons8-em-trânsito-20.png" alt="" />
+                    <img src={FreteGratis} alt="" />
                     <h1>Frete Grátis</h1>
                   </div>
 
@@ -178,7 +184,7 @@
 
                   <div className="observcoes-produto">
                     <div className="seg-container">
-                      <img src="../dist/assets/icons8-cadeado-40.png" alt="" />
+                        <img src={DadosSeguros} alt="" />
                       <h1>Dados seguros em toda a compra</h1>
                     </div>
 
@@ -187,7 +193,7 @@
                     </div>
 
                     <div className="seg-container">
-                      <img src="../dist/assets/icons8-reverter-40.png" alt="" />
+                      <img src={IconeDevolução} alt="" />
                       <h1>Devolução ou troca disponíveis</h1>
                     </div>
                   </div>
