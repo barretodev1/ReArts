@@ -3,6 +3,8 @@ import { useState } from "react";
 import "../tábua-pizza/App.css";
 import "../tábua-pizza/media-queries.css"
 import { Link } from "react-router-dom";
+import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
+
 
 function TábuasPizza() {
   const navigate = useNavigate();
@@ -42,7 +44,7 @@ function TábuasPizza() {
         <header className="meu-header">
           <div className="img-header">
             <a href="http://localhost:5173/">
-              <img src="../dist/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
 

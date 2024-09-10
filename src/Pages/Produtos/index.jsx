@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import '../Produtos/media-queries.css'
 import { Link } from "react-router-dom";
+import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
 
 function Produtos() {
 
@@ -46,7 +47,7 @@ function Produtos() {
         <header className="meu-header">
           <div className='img-header'>
             <a href="http://localhost:5173/">
-            <img src="dist/assets/MARCENARIA-removebg-preview.png" alt="" />
+            <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
 

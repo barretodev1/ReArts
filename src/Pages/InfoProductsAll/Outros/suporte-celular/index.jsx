@@ -3,6 +3,8 @@ import { useState } from "react";
 import "../suporte-celular/App.css";
 import "../suporte-celular/media-queries.css"
 import { Link } from "react-router-dom";
+import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
+
 
 function SuporteCell() {
   const navigate = useNavigate();
@@ -42,7 +44,7 @@ function SuporteCell() {
         <header className="meu-header">
           <div className="img-header">
             <a href="http://localhost:5173/">
-              <img src="../public/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
 

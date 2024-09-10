@@ -3,6 +3,7 @@
   import "./App.css";
   import "../tábua-churrasco/media-queries.css"
   import { Link } from "react-router-dom";
+  import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
   import Img1and3 from '../../../../../public/assets/card-img.png'
   import Img2 from '../../../../../public/assets/pexels-ivan-samkov-449184666666666666.png'
   import FreteGratis from '../../../../../public/assets/icons8-em-trânsito-20.png'
@@ -48,7 +49,7 @@
           <header className="meu-header">
             <div className="img-header">
               <a href="http://localhost:5173/">
-                <img src="../public/assets/MARCENARIA-removebg-preview.png" alt="" />
+                <img src={MarcenariaLogo} alt="" />
               </a>
             </div>
 

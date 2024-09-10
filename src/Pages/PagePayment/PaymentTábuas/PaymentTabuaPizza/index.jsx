@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
+import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
 
 function PaymentPizza() {
   const [formData, setFormData] = useState({
@@ -40,7 +41,7 @@ function PaymentPizza() {
         <header className="meu-header-payment">
           <div>
             <a href="http://localhost:5173/">
-              <img src="/public/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
         </header>

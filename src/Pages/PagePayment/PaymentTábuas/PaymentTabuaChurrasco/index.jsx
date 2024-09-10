@@ -5,6 +5,7 @@ import '../PaymentTabuaChurrasco/media-queries.css'
 import CartaoLogo from '../../../../../public/assets/icons8-parte-traseira-de-cartão-de-banco-40.png'
 import BoletoLogo from '../../../../../public/assets/icons8-bilhete-40 (1).png'
 import PixLogo from '../../../../../public/assets/icons8-foto-40.png'
+import  MarcenariaLogo  from '../../../../../public/assets/MARCENARIA-removebg-preview.png'
 
 function Payment() {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ function Payment() {
         <header className="meu-header-payment">
           <div>
             <a href="http://localhost:5173/">
-              <img src="/public/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
         </header>
