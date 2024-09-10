@@ -46,7 +46,7 @@ function Produtos() {
         <header className="meu-header">
           <div className='img-header'>
             <a href="http://localhost:5173/">
-            <img src="src/assets/MARCENARIA-removebg-preview.png" alt="" />
+            <img src="dist/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
           </div>
 

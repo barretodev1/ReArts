@@ -79,7 +79,7 @@ html {
   display: flex;
   align-items: center;
   background-image:     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Camada de gradiente escuro */
-  url("/src/assets/back.png");
+  url("/dist/assets/back.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,7 +367,7 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-image: url("./public/assets/pexels-ivan-samkov-4491866.jpg");
+  background-image: url("./dist/assets/pexels-ivan-samkov-4491866.jpg");
   background-size: cover;
   width: 26vw;
   height: 43vh;
