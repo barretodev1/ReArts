@@ -46,7 +46,7 @@ function Produtos() {
       <section className="menu">
         <header className="meu-header">
           <div className='img-header'>
-            <a href="http://localhost:5173/">
+            <a href="https://rearts.netlify.app/">
             <img src={MarcenariaLogo} alt="" />
             </a>
           </div>

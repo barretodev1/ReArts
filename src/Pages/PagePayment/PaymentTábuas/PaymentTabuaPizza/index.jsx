@@ -40,7 +40,7 @@ function PaymentPizza() {
       <section className="menu-payment">
         <header className="meu-header-payment">
           <div>
-            <a href="http://localhost:5173/">
+            <a href="https://rearts.netlify.app/">
               <img src={MarcenariaLogo} alt="" />
             </a>
           </div>
