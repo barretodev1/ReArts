@@ -41,7 +41,7 @@ function Payment() {
         <header className="meu-header-payment">
           <div>
             <a href="http://localhost:5173/">
-              <img src="/src/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src="/public/assets/MARCENARIA-removebg-preview.png" alt="" />
             </a>
           </div>
         </header>
@@ -141,14 +141,14 @@ function Payment() {
             <div className="paymant-opcoes">
               {/* PIX */}
               <div className="seg-container-payment2">
-                <img src="/src/assets/icons8-foto-40.png" alt="" />
+                <img src="/public/assets/icons8-foto-40.png" alt="" />
                 <h1>PIX</h1>
                 <a className="button" href="https://mpago.la/1oRjTTa">COMPRAR</a>
               </div>
 
               {/* BOLETO */}
               <div className="seg-container-payment2">
-                <img src="/src/assets/icons8-bilhete-40 (1).png" alt="" />
+                <img src="/public/assets/icons8-bilhete-40 (1).png" alt="" />
                 <h1>BOLETO</h1>
                 <a className="button" href="https://mpago.li/2kNcDhh">COMPRAR</a>
               </div>
@@ -156,7 +156,7 @@ function Payment() {
               {/* CARTÃO DE CREDITO */}
               <div className="seg-container-payment2">
                 <img
-                  src="/src/assets/icons8-parte-traseira-de-cartão-de-banco-40.png"
+                  src="/public/assets/icons8-parte-traseira-de-cartão-de-banco-40.png"
                   alt=""
                 />
                 <h1>CARTÃO</h1>

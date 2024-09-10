@@ -48,7 +48,7 @@
           <header className="meu-header">
             <div className="img-header">
               <a href="">
-              <img src="src/assets/MARCENARIA-removebg-preview.png" alt="" />
+              <img src="public/assets/MARCENARIA-removebg-preview.png" alt="" />
               </a>
             </div>
 
@@ -105,7 +105,7 @@
 
           <div className="main-sobre">
             <div className="img-sobre" >
-              <img src="src/assets/sobre.png" alt="" />
+              <img src="public/assets/sobre.png" alt="" />
             </div>
 
             <div className="secao-texto">
@@ -171,7 +171,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-caminhão-100.png" alt="" />
+                  <img src="public/assets/icons8-caminhão-100.png" alt="" />
                 </div>{" "}
                 {/*IMAGEM*/}
               </div>
@@ -184,7 +184,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-dinheiro-100.png" alt="" />
+                  <img src="public/assets/icons8-dinheiro-100.png" alt="" />
                 </div>{" "}
                 {/*IMAGEM*/}
               </div>
@@ -197,7 +197,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-régua-100.png" alt="" />
+                  <img src="public/assets/icons8-régua-100.png" alt="" />
                 </div>
                 <div className='orçamento'>
                   <a href='#varejo'>Realizar um orçamento</a>
@@ -218,7 +218,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-garantia-100.png" alt="" />
+                  <img src="public/assets/icons8-garantia-100.png" alt="" />
                 </div>{" "}
                 {/*IMAGEM*/}
               </div>
@@ -231,7 +231,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-qualidade-100.png" alt="" />
+                  <img src="public/assets/icons8-qualidade-100.png" alt="" />
                 </div>{" "}
                 {/*IMAGEM*/}
               </div>
@@ -244,7 +244,7 @@
                 </div>{" "}
                 {/*TEXTO*/}
                 <div>
-                  <img src="src/assets/icons8-cartão-100.png" alt="" />
+                  <img src="public/assets/icons8-cartão-100.png" alt="" />
                 </div>{" "}
                 {/*IMAGEM*/}
               </div>
@@ -376,10 +376,10 @@
 
             <div className="social-footer">
               <h1>Redes Sociais</h1>
-              <Link href=""><img src="./src/assets/icons8-instagram-20 (1).png" alt="" />Instagram </Link>
-              <Link href=""><img src="./src/assets/icons8-tiktok-20 (3).png" alt="" />TikTok </Link>
-              <Link href=""><img src="./src/assets/icons8-whatsapp-20 (1).png" alt="" />WhatsApp </Link>
-              <Link href=""><img src="./src/assets/icons8-facebook-20.png" alt="" />Facebook </Link>
+              <Link href=""><img src="./public/assets/icons8-instagram-20 (1).png" alt="" />Instagram </Link>
+              <Link href=""><img src="./public/assets/icons8-tiktok-20 (3).png" alt="" />TikTok </Link>
+              <Link href=""><img src="./public/assets/icons8-whatsapp-20 (1).png" alt="" />WhatsApp </Link>
+              <Link href=""><img src="./public/assets/icons8-facebook-20.png" alt="" />Facebook </Link>
             </div>
 
             {/* DIV   */}

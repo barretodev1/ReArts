@@ -22,7 +22,6 @@ html {
   border-bottom: 1px solid black;
   width: 100%;
   height: 14vh;
-  position: fixed;
   display: flex;
   align-items: center;
   top: 0%;
@@ -76,8 +75,20 @@ html {
     }
 }
 
+.infos {
+  display: flex;
+  justify-content: center;
+  font-size: 9px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding: 10px;
+  background-color: black;
+  padding-top: 16vh; /* Ajuste esse valor conforme necessário */
+}
+
 .tela-vendas {
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +147,7 @@ html {
     }
 
     .img2 {
-      background-image: url("/src/assets/back.png");
+      background-image: url("../src/assets/pexels-ivan-samkov-4491846.png");
       background-size: cover;
       display: flex;
       height: 27vh;
@@ -233,6 +244,7 @@ html {
   }
 
   .nome-preço {
+    margin-top: -0.6rem;
     position: absolute;
     top: 0;
     display: flex;
@@ -255,40 +267,36 @@ html {
 
   .preço-cartao {
     margin-top: 0.5rem;
-    width: 28vw;
+    width: 18vw;
     display: flex;
     flex-direction: column;
   }
 
-  .meu-h1-card  {
+  .meu-h1-card h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 7px 7px;
-    margin-left: -5px;
-    border: none;
     width: 18vw;
-    
-    h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      font-size: 16px;
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-    }
+    border: 1px solid;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .meu-h1-card h1 span {
+    margin-left: 0.2rem;
   }
 
   .bandeiras-cartao {
     display: flex;
     flex-direction: row;
     gap: 0.6rem;
-    
 
 
-    .nossa-band {      
-      background-image: url('/src/img/elo.png');
+    .nossa-band {
+      background-image: url('../../../img/amex.png');
+      background-size: cover;
       display: flex;
       align-items: center;
       width: 4vw;
@@ -297,17 +305,17 @@ html {
     }
 
     .nossa-band1 {
-      background-image: url('/src/img/hiper.png');
+      background-image: url('../../../img/visa.png');
       background-size: cover;
       display: flex;
       align-items: center;
       width: 4vw;
-      height: 16vh;
+      height: 6vh;
       margin-top: 0.7rem;
     }
 
     .nossa-band2 {
-      background-image: url('');
+      background-image: url('../../../img/hipercard.png');
       background-size: cover;
       display: flex;
       align-items: center;
@@ -317,7 +325,7 @@ html {
     }
 
     .nossa-band3 {
-      background-image: url('');
+      background-image: url('../../../img/mastercard.png');
       background-size: cover;
       display: flex;
       align-items: center;
@@ -420,7 +428,7 @@ html {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
   border-radius: 10px;
   padding: 10px;
   gap: 5%;
@@ -475,13 +483,9 @@ html {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+    background-image: url("../public/assets/pexels-ivan-samkov-4491866.jpg");
     background-size: cover;
     width: 20vw;
     height: 38vh;
   }
-}
-
-.meu-h1-card-responsive {
-  display: none;
 }

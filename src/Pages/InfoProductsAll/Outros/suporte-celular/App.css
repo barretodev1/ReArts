@@ -483,7 +483,7 @@ html {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-image: url("../src/assets/pexels-ivan-samkov-4491866.jpg");
+    background-image: url("../public/assets/pexels-ivan-samkov-4491866.jpg");
     background-size: cover;
     width: 20vw;
     height: 38vh;
