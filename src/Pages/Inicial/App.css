@@ -98,7 +98,7 @@ html {
 }
 
 .meu-texto {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: 47px;
   display: flex;
   flex-direction: column;
@@ -109,16 +109,16 @@ html {
   h1 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-  font-size: 17px;
+  font-size: 14px;
   }
 }
 
 .botao-orcamento {
   margin-top: 1rem;
-  width: 16rem;
-  height: 3rem;
+  width: 13rem;
+  height: 2.5rem;
   padding: 10px;
   border: none;
   border-radius: 50px;
@@ -132,7 +132,7 @@ html {
     font-style: normal;
     outline: none;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     padding: 10px;
     color: white;
   }
@@ -149,6 +149,7 @@ html {
 }
 
 .main-sobre {
+  gap: 5rem;
   padding: 40px;
   display: flex;
   align-items: center;
@@ -168,7 +169,7 @@ html {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 32px; 
+    font-size: 28px; 
     color: rgb(156, 120, 49);
   }
 
@@ -208,13 +209,13 @@ html {
     font-weight: 400;
     font-style: normal;
     display: flex;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   h2 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     font-size: 17px;
     margin-top: 1rem;
@@ -272,10 +273,13 @@ html {
   flex-direction: column;
 
   h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 2rem; 
     color: rgb(156, 120, 49);
   }
@@ -287,7 +291,7 @@ html {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 17px; 
+    font-size: 14px; 
     color: rgb(156, 120, 49);
   }
 
@@ -295,7 +299,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 45%;
+    margin-top: 20%;
   }
 }
 

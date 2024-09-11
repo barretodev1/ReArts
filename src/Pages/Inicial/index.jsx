@@ -5,6 +5,7 @@
   import AOS from 'aos'
   import "./App.css";
   import "../Inicial/media-iphoneX.css"
+  import "../Inicial/media-android.css"
   import  MarcenariaLogo  from '../../../public/assets/MARCENARIA-removebg-preview.png'
   import SobreImg from '../../../public/assets/sobre.png'
   import CaminhaoLogo from '../../../public/assets/icons8-caminhão-100.png'
