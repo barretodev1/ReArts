@@ -124,14 +124,14 @@
               <div className="meus-p-h2">
                 <p>Missão</p>
                 <h2>
-                  Na ReArts, nossa missão é transformar o universo da marcenaria
-                  <br /> através da criatividade e da paixão. Dedicamo-nos a criar
+                  Na ReArts, nossa missão é transformar o universo da <br />marcenaria
+                   através da criatividade e da paixão.<br /> Dedicamo-nos a criar
                   peças únicas
-                  <br /> e inovadoras que não apenas atendem às necessidades
+                 e inovadoras que<br /> não apenas atendem às necessidades
                   funcionais de
-                  <br /> nossos clientes, mas também elevam o padrão estético e
+                  <br /> nossos clientes, mas também elevam o padrão<br />  estético e
                   emocional de
-                  <br /> seus espaços. Buscamos constantemente a excelência em
+                  seus espaços. Buscamos<br />  constantemente a excelência em
                   cada detalhe.
                 </h2>
               </div>
@@ -140,22 +140,21 @@
                 <p>Visão</p>
                 <h2>
                   Almejamos ser reconhecidos como a principal <br />
-                  referência no mercado de marcenaria criativa, destacando-nos
-                  <br /> pela nossa capacidade de oferecer soluções que não apenas
-                  <br />
-                  atendem, mas superam as expectativas dos nossos clientes.
-                  <br /> Nosso objetivo é estabelecer novos padrões de excelência.
+                  referência no mercado de marcenaria criativa,<br /> destacando-nos
+                 pela nossa capacidade de oferecer<br /> soluções que não apenas
+                  atendem, mas superam<br /> as expectativas dos nossos clientes.
+                  Nosso objetivo<br />  é estabelecer novos padrões de excelência.
                 </h2>
               </div>
 
               <div className="meus-p-h2">
                 <p>Valores</p>
                 <h2>
-                  Na ReArts, nossos valores são a base de tudo o que fazemos.
-                  <br /> Comprometemo-nos a garantir a máxima qualidade em cada
-                  <br /> projeto que realizamos, buscando sempre a perfeição em
+                  Na ReArts, nossos valores são a base de tudo o que<br /> fazemos.
+                  Comprometemo-nos a garantir a máxima<br /> qualidade em cada
+                  projeto que realizamos, buscando<br /> sempre a perfeição em
                   cada
-                  <br /> detalhe e entrega.
+                  detalhe e entrega.
                 </h2>
               </div>
             </div>
