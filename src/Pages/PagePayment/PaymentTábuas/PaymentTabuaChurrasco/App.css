@@ -9,6 +9,7 @@
   body {
       padding: 0%;
   }
+
   
   html {
     scroll-behavior: smooth;
@@ -66,6 +67,23 @@
     justify-content: center;
     width: 50vw; 
 
+
+    .input-2-payment-h1 {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+    }
+
     .border-input {
       border: 1px solid rgba(0, 0, 0, 0.5); /* A borda parece mais fina devido à transparência */
       padding: 30px;
@@ -73,6 +91,16 @@
       align-items: center;
       flex-direction: column;
       gap: 1rem;
+
+      .h1-tabua-churrasco{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+      }
  
     }
 
@@ -104,6 +132,35 @@
         margin-top: -0.6rem;
       }
     }
+
+    .input-2-payment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      margin-top: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+    }
+
+    .input-10-payment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .input-10-payment input {
+      width: 40vw; /* Confirme se esse tamanho é apropriado para o seu layout */
+      height: 7vh;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 13px;
+      background-color: #ffffff;
+      border-radius: 30px;
+    }
+    
 
     .seg-container-paymenttt {
       display: flex;

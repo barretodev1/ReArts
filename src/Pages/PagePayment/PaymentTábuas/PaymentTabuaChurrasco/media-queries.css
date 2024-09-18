@@ -62,6 +62,20 @@
     align-items: center;
     justify-content: center;
     width: 70%;
+
+    .input-2-payment-h1 {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+  
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+      }
+    }
   }
 
   .screen .border-input {
@@ -113,6 +127,24 @@
         color: black;
         width: 60vw;
     }
+}
+
+.screen .div-compra .input-10-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 80vw;
+}
+
+.screen .div-compra .input-10-payment input {
+  width: 100vw;
+  height: 6vh;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 13px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 
   .screen .div-compra .input-1-payment-rua {

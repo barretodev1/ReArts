@@ -1,7 +1,8 @@
   // importações
   import { Link, useNavigate } from "react-router-dom"
-  import { useState, useEffect } from "react";
+  import { useState, useEffect, useRef } from "react";
   import 'aos/dist/aos.css';
+  import conexao from '../../../Services/api.js'
   import AOS from 'aos'
   import "./App.css";
   import "../Inicial/media-iphoneX.css"
@@ -20,17 +21,46 @@
   import LogoFacebook from '../../../public/assets/icons8-facebook-20.png'
 
   function App() {
+    const nomeRef = useRef(); 
+    const emailRef = useRef(); 
+    const telefoneRef = useRef(); 
+    const servicoRef = useRef(); 
+    const mensagemRef = useRef() 
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // Verifica o tamanho da tela
-      if (window.innerWidth < 768) { // Define o breakpoint para dispositivos móveis
-        AOS.init({
-          disable: true // Desativa AOS em dispositivos móveis
-        });
-      } else {
-        AOS.init(); // Inicializa AOS normalmente em telas maiores
+    async function handleSubmit(event) {
+      event.preventDefault()
+      
+      try {
+          await conexao.post('/', {
+              nome: nomeRef.current.value,
+              email: emailRef.current.value,
+              telefone: telefoneRef.current.value,
+              servico: servicoRef.current.value,
+              mensagem: mensagemRef.current.value
+          })
+          alert('ORÇAMENTO SOLICITADO COM SUCESSO')
+      } catch (error) {
+          alert('ERRO AO SOLICITAR ORÇAMENTO.')
       }
-    });
+  }
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 768) {
+          AOS.init({ disable: true });
+        } else {
+          AOS.init();
+        }
+      };
+    
+      handleResize(); // Call once initially
+      window.addEventListener('resize', handleResize);
+    
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+    
     const navigate = useNavigate();
     const [servico, setServico] = useState("");
 
@@ -344,33 +374,33 @@
             <h2>SOLICITE O ORÇAMENTO ABAIXO</h2>
           </div>
 
-          <div className="form">
+          <form className="form" onSubmit={handleSubmit}>
 
           <div className="input-menor"> {/*INPUT MENOR */}
-              <input placeholder="Seu nome" type="name" />
-              <input placeholder="Seu e-mail" type="email" />
+              <input placeholder="Seu nome" type="name" ref={nomeRef} required/>
+              <input placeholder="Seu e-mail" type="email" ref={emailRef} required/>
           </div>
 
           <div className="input-menor"> {/*INPUT MENOR */}
-              <input placeholder="Seu telefone" type="tel" />
+              <input placeholder="Seu telefone" type="tel"  ref={telefoneRef} required/>
 
-              <select id="servicos" name="servicos" value={servico} onChange={(e) => setServico(e.target.value)}>
+              <select id="servicos" name="servicos" ref={servicoRef} value={servico} required onChange={(e) => setServico(e.target.value)}>
                 <option value="" disabled>Serviço</option>
-                <option value="banho">Móveis</option>
-                <option value="tosa">Varejo</option>
-                <option value="banhoTosa">Personalização</option>
+                <option value="Moveis">Móveis</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Personalizacao">Personalização</option>
               </select>
           </div>
 
           <div className="input-menor">
-            <input className="mensagem" placeholder="Mensagem" type="text" />
+            <input className="mensagem" placeholder="Mensagem" type="text" ref={mensagemRef} required/>
           </div>
 
           <div className="botao-varejoo">
-            <button className="botao-varejo">SOLICITAR ORÇAMENTO</button>
+            <button className="botao-varejo" type="submit">SOLICITAR ORÇAMENTO</button>
           </div>
 
-          </div>
+          </form>
 
         </section>
 
